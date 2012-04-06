@@ -1,0 +1,8 @@
+mapreduce:
+- name: recomendacaoMapReduce
+  mapper:
+    input_reader: recomendacao.customInputReaders.UserEventInputReader
+    handler: recomendacao.negocioRecomendacao.calcularCorrelacoesEntreUsuarioEvento
+    params:
+    - name: shard_count
+      default: 9

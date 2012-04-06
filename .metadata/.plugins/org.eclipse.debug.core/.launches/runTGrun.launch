@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.python.pydev.debug.regularLaunchConfigurationType">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS"/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES"/>
+<stringAttribute key="org.eclipse.ui.externaltools.ATTR_LOCATION" value="${GOOGLE_APP_ENGINE}/dev_appserver.py"/>
+<stringAttribute key="org.eclipse.ui.externaltools.ATTR_OTHER_WORKING_DIRECTORY" value="${workspace_loc:TG/src}"/>
+<stringAttribute key="org.eclipse.ui.externaltools.ATTR_TOOL_ARGUMENTS" value="&quot;${workspace_loc:TG/src}&quot;"/>
+<stringAttribute key="org.eclipse.ui.externaltools.ATTR_WORKING_DIRECTORY" value="${workspace_loc:TG/src}"/>
+<stringAttribute key="org.python.pydev.debug.ATTR_INTERPRETER" value="__default"/>
+<stringAttribute key="org.python.pydev.debug.ATTR_PROJECT" value="TG"/>
+</launchConfiguration>

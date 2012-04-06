@@ -1,0 +1,16 @@
+INSTUPlibs.tweepy.parsers
+E:\Workspace\WS_TG\TG\src\libs\tweepy\parsers.py
+INFOS:&&1|1|2|0&&2|3|2|1&&2|4|2|1&&1|5|2|0&&2|6|2|5&&2|3|2|5&&2|4|2|5&&1|7|2|0&&3|8|2|7&&2|6|2|7&&3|9|2|10&&2|3|2|7&&2|4|2|7&&1|11|2|0&&2|6|2|11&&3|12|2|13&&2|3|2|11
+Parser=1
+JSONParser=7
+json_lib=9
+ModelParser.__init__=13
+__init__=6
+payload_format=8
+JSONParser.__init__=10
+libs.tweepy.parsers=2
+parse_error=4
+ModelParser=11
+parse=3
+model_factory=12
+RawParser=5

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;TG/src/naivebayesclassifier&apos; to &apos;analisador3&apos;" description="Rename resource &apos;naivebayesclassifier&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/naivebayesclassifier" name="analisador3" stamp="1333287431974" updateReferences="true"/>
+</session>

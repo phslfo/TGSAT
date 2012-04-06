@@ -1,0 +1,251 @@
+what,kind,bundleId,bundleVersion,description,time
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1333292740484
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1333292746389
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.delete",1333292750719
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1333292754356
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1333292762056
+error,log,,,"Error checking for valid tokens (imports) for analisador",1333292762108
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1333292785184
+error,log,,,"Error checking for valid tokens (imports) for analisador",1333292785233
+error,log,,,"Error checking for valid tokens (imports) for analisador",1333292807804
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1333292817365
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1333292827330
+activated,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333292829188
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.delete",1333292833692
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.delete",1333292834102
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1333292834903
+activated,view,org.python.pydev,2.4.0.2012020116,"org.python.pydev.navigator.view",1333292840862
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.copy",1333292847732
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1333292848546
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1333292853905
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1333292853979
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1333292854030
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.paste",1333292854035
+opened,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333292855882
+activated,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333292855917
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1333292861386
+activated,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333292862546
+executed,command,,,"org.python.pydev.debug.ui.launchShortcut.python.run",1333292865360
+activated,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333292868321
+executed,command,,,"org.python.pydev.debug.ui.launchShortcut.python.run",1333292871587
+activated,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333292880839
+activated,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333292882785
+activated,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1333292884247
+activated,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333292888058
+activated,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333292892646
+error,log,,,"Error checking for valid tokens (imports) for analisador",1333292906614
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1333292910450
+executed,command,,,"AUTOGEN:::org.python.pydev.debug.BreakpointRulerActions/org.python.pydev.debug.BreakpointRulerAction",1333292940551
+activated,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333292942719
+activated,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333292943557
+activated,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333292946721
+activated,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333292948603
+activated,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333292949379
+executed,command,,,"AUTOGEN:::org.python.pydev.debug.BreakpointRulerActions/org.python.pydev.debug.BreakpointRulerAction",1333292951154
+activated,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1333292953231
+activated,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333292955354
+executed,command,,,"org.python.pydev.debug.ui.launchShortcut.python.debug",1333292958800
+started,bundle,com.python.pydev.debug,2.4.0.2012020116,"com.python.pydev.debug",1333292960108
+activated,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333292966084
+executed,command,,,"org.python.pydev.debug.ui.launchShortcut.python.run",1333292969639
+activated,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333292982568
+activated,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1333292985791
+activated,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333293007651
+executed,command,,,"org.python.pydev.debug.ui.launchShortcut.python.debug",1333293013445
+activated,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1333293039415
+activated,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333293040928
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1333293054061
+executed,command,,,"org.python.pydev.debug.ui.launchShortcut.python.debug",1333293057278
+activated,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1333293064337
+activated,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333293065891
+activated,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333293068284
+activated,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333293069667
+executed,command,,,"org.python.pydev.debug.ui.launchShortcut.python.debug",1333293073144
+activated,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333293076476
+activated,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333293124691
+executed,command,,,"org.python.pydev.debug.ui.launchShortcut.python.run",1333293128264
+activated,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1333293132295
+activated,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333293139401
+activated,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333293139941
+executed,command,,,"AUTOGEN:::org.python.pydev.debug.BreakpointRulerActions/org.python.pydev.debug.BreakpointRulerAction",1333293142858
+activated,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333293144125
+executed,command,,,"org.python.pydev.debug.ui.launchShortcut.python.run",1333293149024
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1333293149158
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1333293150199
+error,log,,,"Referenced part does not exist yet: org.eclipse.ui.views.ProblemView.",1333293150253
+opened,view,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui.DebugView",1333293150522
+opened,view,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui.VariableView",1333293151623
+opened,view,com.android.ide.eclipse.ddms,12.0.0.v201106281929-138431,"com.android.ide.eclipse.ddms.views.LogCatView",1333293151795
+activated,perspective,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui.DebugPerspective",1333293151868
+opened,view,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui.BreakpointView",1333293152119
+opened,view,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui.ExpressionView",1333293152165
+activated,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333293152269
+executed,command,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui.commands.StepOver",1333293161707
+executed,command,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui.commands.Resume",1333293170429
+closed,view,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui.ExpressionView",1333293171804
+activated,perspective,org.python.pydev,2.4.0.2012020116,"org.python.pydev.ui.PythonPerspective",1333293171869
+executed,command,,,"AUTOGEN:::org.python.pydev.debug.BreakpointRulerActions/org.python.pydev.debug.BreakpointRulerAction",1333293173355
+activated,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1333293175343
+activated,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333293178698
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.text.contentAssist.proposals",1333293181145
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.copy",1333293218689
+error,log,,,"Error checking for valid tokens (imports) for analisador",1333293219119
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.undo",1333293219348
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1333293225459
+error,log,,,"Error checking for valid tokens (imports) for analisador",1333293241842
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1333293245714
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1333293253263
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1333293260079
+error,log,,,"Error checking for valid tokens (imports) for analisador",1333293264698
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.paste",1333293267759
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1333293272132
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1333293283411
+activated,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333293287160
+executed,command,,,"org.python.pydev.debug.ui.launchShortcut.python.run",1333293291395
+activated,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333293302295
+executed,command,,,"org.python.pydev.debug.ui.launchShortcut.python.run",1333293304940
+activated,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1333293311510
+activated,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333293315868
+executed,command,,,"org.python.pydev.debug.ui.launchShortcut.python.debug",1333293318366
+activated,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333293319787
+error,log,,,"Unhandled: ExtSlice[dims=[Index[value=Name[id=label, ctx=Load, reserved=false]], Index[value=Name[id=fname, ctx=Load, reserved=false]]]]",1333293325095
+executed,command,,,"AUTOGEN:::org.python.pydev.debug.BreakpointRulerActions/org.python.pydev.debug.BreakpointRulerAction",1333293342391
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1333293345231
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1333293346825
+activated,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333293438506
+executed,command,,,"org.python.pydev.debug.ui.launchShortcut.python.run",1333293441021
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1333293441140
+activated,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333293441203
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1333293442679
+activated,perspective,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui.DebugPerspective",1333293442734
+executed,command,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui.commands.StepOver",1333293448324
+activated,view,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui.VariableView",1333293458156
+activated,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333293552004
+executed,command,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui.commands.Resume",1333293552823
+activated,perspective,org.python.pydev,2.4.0.2012020116,"org.python.pydev.ui.PythonPerspective",1333293554304
+activated,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333293555973
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.delete",1333293563702
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1333293564949
+executed,command,,,"org.python.pydev.debug.ui.launchShortcut.python.run",1333293567476
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1333293567609
+activated,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333293567667
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1333293568640
+activated,perspective,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui.DebugPerspective",1333293568695
+executed,command,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui.commands.StepOver",1333293574817
+activated,view,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui.VariableView",1333293577808
+executed,command,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui.commands.Resume",1333293606781
+activated,perspective,org.python.pydev,2.4.0.2012020116,"org.python.pydev.ui.PythonPerspective",1333293608170
+activated,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333293608182
+activated,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333293610802
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1333293616984
+executed,command,,,"org.python.pydev.debug.ui.launchShortcut.python.run",1333293620567
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1333293623571
+activated,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333293623630
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1333293625223
+activated,perspective,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui.DebugPerspective",1333293625282
+executed,command,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui.commands.StepOver",1333293627667
+activated,view,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui.VariableView",1333293630095
+activated,perspective,org.python.pydev,2.4.0.2012020116,"org.python.pydev.ui.PythonPerspective",1333293731582
+activated,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333293731595
+no handler,command,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui.commands.Resume",1333293735400
+no handler,command,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui.commands.Resume",1333293735658
+no handler,command,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui.commands.Resume",1333293736544
+no handler,command,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui.commands.Resume",1333293736818
+no handler,command,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui.commands.Resume",1333293737078
+no handler,command,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui.commands.Resume",1333293739760
+no handler,command,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui.commands.Resume",1333293739961
+no handler,command,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui.commands.Resume",1333293740169
+activated,perspective,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui.DebugPerspective",1333293745715
+executed,command,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui.commands.Resume",1333293747510
+activated,perspective,org.python.pydev,2.4.0.2012020116,"org.python.pydev.ui.PythonPerspective",1333293748846
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1333293762176
+error,log,,,"Error checking for valid tokens (imports) for analisador",1333293762201
+activated,view,org.python.pydev,2.4.0.2012020116,"org.python.pydev.navigator.view",1333293771901
+opened,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333293772149
+activated,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333293772188
+activated,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333293776717
+closed,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333293776717
+activated,view,org.python.pydev,2.4.0.2012020116,"org.python.pydev.navigator.view",1333293777829
+opened,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333293778121
+activated,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333293778162
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1333293790108
+activated,view,org.python.pydev,2.4.0.2012020116,"org.python.pydev.navigator.view",1333293816633
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.copy",1333293829025
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.paste",1333293830365
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1333293832676
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1333293837018
+executed,command,org.eclipse.ltk.ui.refactoring,3.4.100.v20090604,"org.eclipse.ltk.ui.refactoring.commands.renameResource",1333293837026
+opened,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333293839174
+activated,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333293839220
+error,log,,,"Error checking for valid tokens (imports) for analisador",1333293839747
+closed,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333293840812
+closed,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333293841401
+closed,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333293842634
+closed,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333293843772
+error,log,,,"Error checking for valid tokens (imports) for analisador",1333293873899
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1333293898218
+error,log,,,"Error checking for valid tokens (imports) for analisador",1333293898256
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.cut",1333293936484
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.paste",1333293940750
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1333293946172
+error,log,,,"Error checking for valid tokens (imports) for analisador",1333293946214
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1333293952554
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1333293958433
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.cut",1333293969391
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.paste",1333293972032
+error,log,,,"Error checking for valid tokens (imports) for analisador",1333293975071
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1333293976439
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1333293980401
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.cut",1333293991958
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.paste",1333293995922
+error,log,,,"Error checking for valid tokens (imports) for analisador",1333293999741
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1333293999785
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1333294007058
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1333294122780
+error,log,,,"Error checking for valid tokens (imports) for analisador",1333294122834
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1333294127775
+executed,command,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.actions.togglecomment",1333294134800
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1333294136139
+activated,view,org.python.pydev,2.4.0.2012020116,"org.python.pydev.navigator.view",1333294139856
+opened,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333294140110
+activated,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333294140163
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.copy",1333294144455
+activated,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333294145531
+closed,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333294145531
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.paste",1333294148517
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1333294152282
+error,log,,,"Error checking for valid tokens (imports) for analisador",1333294152324
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.text.contentAssist.proposals",1333294154992
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1333294156541
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1333294156775
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1333294157659
+activated,view,org.python.pydev,2.4.0.2012020116,"org.python.pydev.navigator.view",1333294166643
+opened,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333294169959
+activated,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333294169995
+activated,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333294172586
+executed,command,,,"org.python.pydev.debug.ui.launchShortcut.python.debug",1333294180742
+activated,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1333294186807
+activated,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333294190049
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1333294196538
+executed,command,,,"org.python.pydev.debug.ui.launchShortcut.python.debug",1333294201681
+activated,view,org.python.pydev,2.4.0.2012020116,"org.python.pydev.navigator.view",1333294209832
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.copy",1333294210592
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1333294211646
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1333294217696
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1333294217744
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1333294217812
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.paste",1333294217815
+opened,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333294220760
+activated,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333294220803
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1333294225369
+activated,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333294227495
+activated,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333294229114
+executed,command,,,"AUTOGEN:::org.python.pydev.debug.BreakpointRulerActions/org.python.pydev.debug.BreakpointRulerAction",1333294232115
+activated,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333294267980
+executed,command,,,"org.python.pydev.debug.ui.launchShortcut.python.run",1333294270422
+activated,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1333294276102
+activated,editor,org.python.pydev,2.4.0.2012020116,"org.python.pydev.editor.PythonEditor",1333294286384
+error,log,,,"Unhandled: ExtSlice[dims=[Index[value=Name[id=label, ctx=Load, reserved=false]], Index[value=Name[id=fname, ctx=Load, reserved=false]]]]",1333294290200
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.copy",1333294293850
+error,log,,,"Error checking for valid tokens (imports) for analisador",1333294296436
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.paste",1333294297237

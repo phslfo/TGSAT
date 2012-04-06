@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Análise de Sentimento em Tempo Real</title>
+  </head>
+  
+  <body>
+      <div id="titulo">
+            Titulo
+      </div>
+  
+      <div id="busca">
+            Campo da Busca
+      </div>
+      
+      <div id="conteudo">
+            <div id="subitem1" class="subitem">
+                Oi 1
+            </div>
+            
+            <div id="subitem2" class="subitem">
+                Oi 2
+            </div>
+            
+            <div id="subitem3" class="subitem">
+                Oi 3
+            </div>
+            
+            <br style="clear: both;" />
+      </div>
+      
+      <div id="lateral-esquerda">
+            Top User: <br/>
+            {% for user in top_users %}
+                {{ user.0 }} - {{ user.1 }} <br />
+            {% endfor %}
+            
+            <br />
+            <br />
+            
+            Top Word: <br />
+            {% for word in top_words %}
+                {{ word.0 }} - {{ word.1 }} <br />
+            {% endfor %}
+            
+            <br />
+            <br />
+            
+            Top Hashtag: <br />
+            {% for ht in top_hashtags %}
+                {{ ht.0 }} - {{ ht.1 }} <br />
+            {% endfor %}
+      </div>
+      
+      <div id="centro">
+            {% for tweet, a1, a2, a3 in tweets %}
+                {{ a1.label }} {{ a2 }} {{ a3 }}<br/>
+                {{ tweet.text }} <br/>
+                {{ tweet.user }} <br/>
+                {{ tweet.date }} <br/> <br/> <br/>                
+            {% endfor %}
+      </div>
+      
+      <div id="lateral-direita">
+            Tamanho da Base = {{tweets|length}}
+      </div>
+  
+  </body>
+</html>

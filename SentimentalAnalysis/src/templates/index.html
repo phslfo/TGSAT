@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>Recomendacao v11</title>
+  </head>
+  <body>
+  	  <h1>Recomendacao v11</h1>
+	  opcoes: <br/>
+  	  - coloque ?clear=yes para apagar tudo <br/>
+	  - coloque ?test=yes para inserir todos eventos de novo) <br/>
+	  <br/>
+      <b>correlacoes:</b>
+      <br/>
+      {% for ec in eventosCorrelacoes %}
+          {{ ec.correlacao|floatformat:4 }} <b>{{ ec.evento.nome }}</b>
+          [
+          {% for t in ec.evento.tags %}
+          	{{ t }}, 
+          {% endfor %}
+          ] 
+          <br/>
+      {% endfor %}
+      <br/>
+  </body>
+</html>

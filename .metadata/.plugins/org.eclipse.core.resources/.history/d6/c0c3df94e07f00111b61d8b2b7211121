@@ -1,0 +1,105 @@
+from string import punctuation
+from libs import textprocessing
+import socket
+import util
+import threading
+
+ignore_words = ['the', 'this', 'that', 'for', 'and']
+
+def top_words(tweets_list, number=10):
+    words = {}    
+    words_gen = (word.strip(punctuation).lower() for tweet in tweets_list
+                                                 for word in tweet['text'].split()
+                                                    if len(word) >= 3 and word not in ignore_words)
+    
+    for word in words_gen:
+        words[word] = words.get(word, 0) + 1
+    
+    top_words = sorted(words.iteritems(),
+                       cmp=lambda x, y: cmp(x[1], y[1]) or cmp(y[0], x[0]),
+                       reverse=True)[:number]
+    
+    return top_words
+
+def top_hashtags(tweets_list, number=10):
+    words = {}    
+    words_gen = (word.strip().lower() for tweet in tweets_list
+                                                 for word in tweet['text'].split()
+                                                    if word.startswith('#'))
+    
+    for word in words_gen:
+        words[word] = words.get(word, 0) + 1
+    
+    top_hashtags = sorted(words.iteritems(),
+                       cmp=lambda x, y: cmp(x[1], y[1]) or cmp(y[0], x[0]),
+                       reverse=True)[:number]
+    
+    return top_hashtags
+
+def top_users(tweets_list, number=10):
+    words = {}    
+    words_gen = (tweet['user'] for tweet in tweets_list)
+    
+    for word in words_gen:
+        words[word] = words.get(word, 0) + 1
+    
+    top_users = sorted(words.iteritems(),
+                       cmp=lambda x, y: cmp(x[1], y[1]) or cmp(y[0], x[0]),
+                       reverse=True)[:number]
+    
+    return top_users
+
+dic = {}
+def analise(tweet):
+    sent = textprocessing.adapter.query(util.remover_acentos(tweet['text']))
+    dic[tweet[text]] = sent
+
+def analysis_sentimental(tweets_list, d1=True, d2=True, d3=True):
+        
+    for tweet in tweets_list: 
+        threading.Thread(target=analise, args=(tweet,))
+
+
+#def analysis_sentimental(tweets_list, d1=True, d2=True, d3=True):
+#        
+#    lista = []
+#    for tweet in tweets_list:
+#        analise1 = textprocessing.adapter.query(util.remover_acentos(tweet['text'])) if d1 else {'label' : 'nada'}
+#        analise2 = analyse2(util.remover_acentos(tweet['text'])) if d2 else "nada"
+#        analise3 = analyse3(util.remover_acentos(tweet['text'])) if d3 else "nada"
+#        
+#        lista.append((tweet, analise1, analise2, analise3))
+#
+#    return lista
+
+def analyse2(text):
+
+    HOST = 'localhost'    # The remote host
+    PORT = 7001           # The same port as used by the server
+    
+    try:
+        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        s.connect((HOST, PORT))
+        s.sendall(text)
+        data = s.recv(1024)
+        s.close()
+    except Exception:
+        return "erro"
+    
+    return repr(data)
+
+def analyse3(text):
+
+    HOST = 'localhost'    # The remote host
+    PORT = 7002           # The same port as used by the server
+    
+    try:
+        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        s.connect((HOST, PORT))
+        s.sendall(text)
+        data = s.recv(1024)
+        s.close()
+    except Exception:
+        return "erro"
+    
+    return repr(data)

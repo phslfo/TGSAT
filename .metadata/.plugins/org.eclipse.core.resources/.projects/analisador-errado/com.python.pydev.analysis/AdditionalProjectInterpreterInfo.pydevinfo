@@ -1,0 +1,27 @@
+-- VERSION_3
+-- START DISKCACHE
+E:\Workspace\WS_TG\.metadata\.plugins\org.eclipse.core.resources\.projects\analisador-errado\com.python.pydev.analysis\v1_indexcache
+.v1_indexcache
+main|0|E:\Workspace\WS_TG\analisador-errado\main.py
+-- END DISKCACHE
+-- START DICTIONARY
+3
+2=Model
+3=Model.__init__
+1=main
+-- END DICTIONARY
+-- START TREE 1
+1
+mod|1|Model!9@
+-- END TREE
+-- START TREE 2
+8
+__i|1|__init__!2&10@
+cla|1|Classify!2&10@
+fea|4|featureVectors!3&11@featureCounts!3&11@featureNameList!3&11@features!3&11@
+get|1|GetValues!2&10@
+lab|1|labelCounts!3&11@
+mod|1|model!2&11@
+tes|1|TestClassifier!2&10@
+tra|2|trainingFile!3&11@TrainClassifier!2&10@
+-- END TREE
