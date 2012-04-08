@@ -18,15 +18,21 @@
       
       <div id="conteudo">
             <div id="subitem1" class="subitem">
-                Oi 1
+                Positivo = {{stats.0.pos}} - {% widthratio stats.0.pos tweets|length 100 %}% <br />
+                Neutro = {{stats.0.neutral}} - {% widthratio stats.0.neutral tweets|length 100 %}% <br />
+                Negativo = {{stats.0.neg}} - {% widthratio stats.0.neg tweets|length 100 %}% <br />
             </div>
             
             <div id="subitem2" class="subitem">
-                Oi 2
+                Positivo = {{stats.1.pos}} - {% widthratio stats.1.pos tweets|length 100%}% <br />
+                Neutro = {{stats.1.neutral}} - {% widthratio stats.1.neutral tweets|length 100 %}% <br />
+                Negativo = {{stats.1.neg}} - {% widthratio stats.1.neg tweets|length 100 %}% <br />
             </div>
             
             <div id="subitem3" class="subitem">
-                Oi 3
+            	Positivo = {{stats.2.pos}} - {% widthratio stats.2.pos tweets|length 100%}% <br />
+                Neutro = {{stats.2.neutral}} - {% widthratio stats.2.neutral tweets|length 100%}% <br />
+                Negativo = {{stats.2.neg}} - {% widthratio stats.2.neg tweets|length 100%}% <br />
             </div>
             
             <br style="clear: both;" />
@@ -57,7 +63,10 @@
       
       <div id="centro">
             {% for tweet, a1, a2, a3 in tweets %}
-                {{ a1.label }} {{ a2 }} {{ a3 }}<br/>
+                <span title="{{a1.prob}}">{{ a1.label }}</span> 
+                <span title="{{a2.prob}}">{{ a2.label }}</span> 
+                <span title="{{a3.prob}}">{{ a3.label }}</span> <br/>
+                
                 {{ tweet.text }} <br/>
                 {{ tweet.user }} <br/>
                 {{ tweet.date }} <br/> <br/> <br/>                
@@ -65,7 +74,8 @@
       </div>
       
       <div id="lateral-direita">
-            Tamanho da Base = {{tweets|length}}
+      		Tamanho Real = {{size}} <br />
+            Tamanho Analisado = {{tweets|length}}
       </div>
   
   </body>

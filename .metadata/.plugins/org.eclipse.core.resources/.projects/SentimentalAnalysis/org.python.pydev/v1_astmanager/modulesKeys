@@ -38,9 +38,9 @@ realtime.control|E:\Workspace\WS_TG\SentimentalAnalysis\src\realtime\control.py
 realtime.models|E:\Workspace\WS_TG\SentimentalAnalysis\src\realtime\models.py
 realtime.views|E:\Workspace\WS_TG\SentimentalAnalysis\src\realtime\views.py
 settings|E:\Workspace\WS_TG\SentimentalAnalysis\src\settings.py
+teste|E:\Workspace\WS_TG\SentimentalAnalysis\src\teste.py
 urls|E:\Workspace\WS_TG\SentimentalAnalysis\src\urls.py
 util.__init__|E:\Workspace\WS_TG\SentimentalAnalysis\src\util\__init__.py
 util.decorators|E:\Workspace\WS_TG\SentimentalAnalysis\src\util\decorators.py
 util.json|E:\Workspace\WS_TG\SentimentalAnalysis\src\util\json.py
 util.request|E:\Workspace\WS_TG\SentimentalAnalysis\src\util\request.py
-views|E:\Workspace\WS_TG\SentimentalAnalysis\src\views.py

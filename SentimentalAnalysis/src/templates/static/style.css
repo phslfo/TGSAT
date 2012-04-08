@@ -2,7 +2,125 @@
 body {
     margin-left: 100px;
     margin-right: 100px;
+    
+    background: #262C34;
 }
+
+#wrapper {
+	width: 900px;
+	height: 400px;
+	
+	margin: 130px 0 0 110px;
+	background: #fff;	
+	
+	-webkit-border-radius: 25px;
+}
+
+#div-propaganda {
+	text-align: center;
+	
+	width: 100%;
+	height: 64%;	
+}
+
+#div-propaganda .texto {
+	color: #333;
+	margin: 70px 22px 35px;
+	font-weight: bold;
+	text-align: center;	
+	
+	font-size: 27px;
+	line-height: 36px;
+	padding-top: 90px;
+	
+	font-family: Helvetica;
+}
+
+#div-propaganda .sub-texto {
+	font-weight: 300;
+	color: #777;	
+}
+
+#div-busca {
+	width: 550px;
+	height: 59px;
+	
+	margin-left: 165px;
+	
+	background: whiteSmoke;
+	-webkit-border-radius: 6px;
+	border: 1px solid #D8D8D8;
+}
+
+#div-busca input {
+	float: left;
+	width: 480px;
+	height: 40px;
+	font-size: 20px;
+	line-height: 24px;
+	-webkit-border-radius: 6px 0 0 6px;
+	-moz-border-radius: 6px 0 0 6px;
+	border-radius: 6px 0 0 6px;
+	border-right: 0;
+	border: 1px solid #CCC;
+	color: #555;
+	margin: 10px 0 0 10px;
+}
+
+#div-busca input:focus {
+	border-color: #65C31F; /*rgba(82, 168, 236, 0.8);*/
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(82,168,236,0.6);
+	-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(82,168,236,0.6);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(82,168,236,0.6);
+	outline: 0;
+}
+
+#div-busca button {
+	float: left;
+	width: 46px;
+	height: 40px;
+	-webkit-border-radius: 0 6px 6px 0;
+	-moz-border-radius: 0 6px 6px 0;
+	border-radius: 0 6px 6px 0;
+	
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+.icon-search {
+	background-image: url("imgs/icons-white.png");
+	background-position: -48px 0;	
+	
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	line-height: 14px;
+	vertical-align: text-top;
+	background-repeat: no-repeat;
+}
+
+.btn-inverse {
+	background-color: #65C31F;
+	background-image: -moz-linear-gradient(top, #454545, #262626);
+	background-image: -ms-linear-gradient(top, #454545, #262626);
+	/*background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#454545), to(#262626));
+	background-image: -webkit-linear-gradient(top, #454545, #262626);*/
+	background-image: -o-linear-gradient(top, #454545, #262626);
+	background-image: linear-gradient(top, #454545, #262626);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#454545', endColorstr='#262626', GradientType=0);
+	border-color: #262626 #262626 black;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+
+
+
+
+
+
+/* Inicio Realtime */
+
 
 #titulo {
     width: 100%;

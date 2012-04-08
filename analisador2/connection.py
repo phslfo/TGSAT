@@ -1,5 +1,5 @@
 import socket
-import analisador
+from analisador_modificado import Classificador
 
 HOST = 'localhost'
 PORT = 7002
@@ -8,7 +8,7 @@ s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.bind((HOST, PORT))
 s.listen(1)
 
-cl = analisador.Classificador()
+cl = Classificador()
 
 while 1:
     print 'aqui'

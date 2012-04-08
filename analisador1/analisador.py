@@ -38,11 +38,11 @@ def sentiment(text):
         sentiment = 0
         
     if sentiment < 0:
-        return 'negative'
+        return {'label' : 'neg', 'prob' : sentiment}
     elif sentiment == 0:
-        return 'neutral'
+        return {'label' : 'neutral', 'prob' : sentiment}
     elif sentiment > 0:
-        return 'positive'
+        return {'label' : 'pos', 'prob' : sentiment}
     
 
 

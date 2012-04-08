@@ -4,21 +4,30 @@ import util
 from realtime import control
 import processamento
 
+def home(request):
+    if request.method == 'GET':
+        return util.request.render('index.html', {}, request)
+
 def realtime(request):
     if request.method == 'GET':
         query = request.GET.get('q', None)
         
         if query:
-            tweets = control.get_realtime_tweets(query + " -RT", True)
+            tweets = control.get_realtime_tweets(query + " -RT", True)            
+            tweets_analysed = processamento.control.analysis_sentimental(tweets, number=4, d1=False)
             
-            tweets_analysed = processamento.control.analysis_sentimental(tweets, d1=True)
+            stats = processamento.control.stats_analysis(tweets_analysed)
+            
             top_words = processamento.control.top_words(tweets)
             top_hashtags = processamento.control.top_hashtags(tweets)
             top_users = processamento.control.top_users(tweets)
             
+            tweets_analysed = sorted(tweets_analysed, key=lambda tupla:tupla[2]==tupla[3], reverse=True)
             
             d = {
+                 'size'         : len(tweets),
                  'tweets'       : tweets_analysed,
+                 'stats'        : stats,
                  'top_words'    : top_words,
                  'top_hashtags' : top_hashtags,
                  'top_users'    : top_users

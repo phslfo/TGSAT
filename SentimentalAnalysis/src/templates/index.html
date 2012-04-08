@@ -1,24 +1,29 @@
 <html>
   <head>
-    <title>Recomendacao v11</title>
+  	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Twitter Feeling</title>
+    
+  	<link href="\static\style.css" rel="stylesheet" type="text/css" media="screen"/>
+    
   </head>
+  
   <body>
-  	  <h1>Recomendacao v11</h1>
-	  opcoes: <br/>
-  	  - coloque ?clear=yes para apagar tudo <br/>
-	  - coloque ?test=yes para inserir todos eventos de novo) <br/>
-	  <br/>
-      <b>correlacoes:</b>
-      <br/>
-      {% for ec in eventosCorrelacoes %}
-          {{ ec.correlacao|floatformat:4 }} <b>{{ ec.evento.nome }}</b>
-          [
-          {% for t in ec.evento.tags %}
-          	{{ t }}, 
-          {% endfor %}
-          ] 
-          <br/>
-      {% endfor %}
-      <br/>
+  	<div id="wrapper">
+  	
+  		<div id="div-propaganda">
+  			<div class="texto">
+  				Descubra o que estão falando sobre alguém do seu interesse. <br/>
+  				<span class="sub-texto">Contéudo Social em Tempo Real</span>
+  			</div>
+  		</div>
+  		
+		<div id="div-busca">
+			<form action="/realtime" method="get">
+				<input id="search" name="q" type="text" placeholder="Santorum, Paul McCartney, Harrison Ford...">
+				<button class="btn btn-large btn-inverse" id="artist_submit" type="submit"><i class="icon-search"></i></button>
+			</form>
+		</div>
+	</div>
   </body>
+  
 </html>
