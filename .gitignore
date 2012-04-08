@@ -1,0 +1,9 @@
+# Compiled source #
+###################
+*.pyc
+django.log
+.pydevproject
+.settings
+settings.py
+.metadata*
+
