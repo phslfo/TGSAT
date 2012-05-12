@@ -13,7 +13,7 @@ def top_words(tweets_list, number=10):
     words = {}    
     words_gen = (word.strip(punctuation).lower() for tweet in tweets_list
                                                  for word in tweet['text'].split()
-                                                    if len(word) >= 3 and word not in ignore_words)
+                                                    if len(word) > 3 and word not in ignore_words)
     
     for word in words_gen:
         words[word] = words.get(word, 0) + 1
@@ -64,27 +64,27 @@ def stats_analysis(tweet_analysed_list):
         
     return (stats1, stats2, stats3)
 
-def analise(tweets_list, my_queue, d1, d2, d3):
+def analise(tweets_list, query, my_queue, d1, d2, d3):
     for tweet in tweets_list:
         text_without_accents = util.remover_acentos(tweet['text'])
         
         if text_without_accents:        
             analise1 = textprocessing.adapter.query(text_without_accents) if d1 else {'label' : 'off'}
-            analise2 = analyse2(text_without_accents) if d2 else {'label' : 'off'}
-            analise3 = analyse3(text_without_accents) if d3 else {'label' : 'off'}
+            analise2 = analyse2(text_without_accents, query) if d2 else {'label' : 'off'}
+            analise3 = analyse3(text_without_accents, query) if d3 else {'label' : 'off'}
         
             my_queue.put((tweet, analise1, analise2, analise3))
         
         else:
             my_queue.put((tweet, {'label' : 'erro'}, {'label' : 'erro'}, {'label' : 'erro'}))
 
-def analysis_sentimental(tweets_list, number=2, d1=True, d2=True, d3=True):    
+def analysis_sentimental(tweets_list, query, number=2, d1=True, d2=True, d3=True):    
     from Queue import Queue 
     my_queue = Queue()
 
     divisor = len(tweets_list)/number
     for i in range(number):        
-        th = threading.Thread(name='t'+str(i+1), target=analise, args=(tweets_list[divisor*i:divisor*(i+1)], my_queue, d1, d2, d3)) 
+        th = threading.Thread(name='t'+str(i+1), target=analise, args=(tweets_list[divisor*i:divisor*(i+1)], query, my_queue, d1, d2, d3)) 
         th.start()    
     
     while th.isAlive():
@@ -94,19 +94,7 @@ def analysis_sentimental(tweets_list, number=2, d1=True, d2=True, d3=True):
     
     return lista
 
-#def analysis_sentimental(tweets_list, d1=True, d2=True, d3=True):
-#        
-#    lista = []
-#    for tweet in tweets_list:
-#        analise1 = textprocessing.adapter.query(util.remover_acentos(tweet['text'])) if d1 else {'label' : 'nada'}
-#        analise2 = analyse2(util.remover_acentos(tweet['text'])) if d2 else "nada"
-#        analise3 = analyse3(util.remover_acentos(tweet['text'])) if d3 else "nada"
-#        
-#        lista.append((tweet, analise1, analise2, analise3))
-#
-#    return lista
-
-def analyse2(text):
+def analyse2(text, query):
     import ast
     
     HOST = 'localhost'    # The remote host
@@ -115,7 +103,7 @@ def analyse2(text):
     try:
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         s.connect((HOST, PORT))
-        s.sendall(str(text))
+        s.sendall(str(text) + '.:.' + query)
         data = s.recv(1024)
         s.close()
     except Exception:
@@ -123,7 +111,7 @@ def analyse2(text):
     
     return ast.literal_eval(data)
 
-def analyse3(text):
+def analyse3(text, query):
     import ast
     
     HOST = 'localhost'    # The remote host

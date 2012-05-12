@@ -1,9 +1,11 @@
 
 body {
+	margin-top: 0;
     margin-left: 100px;
     margin-right: 100px;
     
     background: #262C34;
+    font-family: Segoe UI;
 }
 
 #wrapper {
@@ -64,7 +66,7 @@ body {
 	border-right: 0;
 	border: 1px solid #CCC;
 	color: #555;
-	margin: 10px 0 0 10px;
+	margin: -5px 0 0 10px;
 }
 
 #div-busca input:focus {
@@ -83,9 +85,18 @@ body {
 	-moz-border-radius: 0 6px 6px 0;
 	border-radius: 0 6px 6px 0;
 	
-	margin-top: 10px;
+	margin-top: -5px;
 	cursor: pointer;
 }
+
+.busca-realtime {
+	float: right; 
+	margin: 0!important;
+	-webkit-border-radius: 0!important;	
+	-webkit-border-bottom-left-radius: 6px!important;
+	-webkit-border-bottom-right-radius: 6px!important;
+}
+
 
 .icon-search {
 	background-image: url("imgs/icons-white.png");
@@ -123,10 +134,11 @@ body {
 
 
 #titulo {
-    width: 100%;
+    width: 50%;
     height: 50px;
     margin-bottom: 15px;
     
+    float: left;
     text-align: center;        
     background: #bebebe; 
 }
@@ -164,15 +176,40 @@ body {
     margin: 15px;
     
     float: left;
-    
-    background: #bebebe;
+}
+
+#top_list {
+	background-color: #ebebeb;
+	-webkit-border-radius: 10px;
+	
+	padding-bottom: 7px;
+}
+
+.subtitulo {
+	font-weight: bold;
+	font-size: 1em!important;
+	padding-bottom: 10px!important;
+}
+
+#top_list td {
+	
+	font-weight: bold;
+	font-size: 0.75em;
+	padding-left: 5px;
+	overflow: hidden;
+}
+
+#top_list .barra {
+	background:#0060B6 none repeat scroll 0 0; 
+	-webkit-border-radius: 2px;
+	height: 12px;
 }
 
 #centro {
     width: 550px;
     min-height: 200px;
     margin: 15px;
-    
+    -webkit-border-radius: 10px;
     float: left;
     background: #bebebe;
 }
@@ -184,5 +221,72 @@ body {
     
     float: left;
     
-    background: #bebebe;
+    background: #ebebeb;
+    -webkit-border-radius: 10px;
 }
+
+#feed {
+	margin: 0;
+	padding: 0;
+}
+
+#tweet {
+	background: #EBEBEB;	
+	list-style-type: none;
+	margin: 0 0 10px 10px;
+}
+/* #6C6C6C - cinza
+	#008557 - verde
+	#00AE70 - verde
+	"Helvetica Neue"
+	#AA142B - vermelho
+*/
+#tweet .foto{
+	background: #bebebe;
+	padding: 6px;
+	float: left;
+}
+
+#tweet div.texto {
+	width: 400px;
+	height: 58px;
+	padding-left: 10px;
+	vertical-align: middle;
+	display: table-cell;
+	
+	font-size: 0.75em;
+ }
+ 
+ #tweet div.texto a {
+	color: #AA142B;
+	text-decoration: none;
+ }
+ 
+ #tweet div.texto a:hover {
+	color: #AA142B;
+	text-decoration: underline;
+ }
+ 
+ #icon {
+ 	float: right;
+	margin: 5px 5px 0 0;
+	width: 48px;
+	height: 48px;
+ }
+ 
+ .icon_pos {
+ 	background-image: url("imgs/icon_pos.png");	
+ }
+ 
+  .icon_neg {
+ 	background-image: url("imgs/icon_neg.png");	
+ }
+ 
+  .icon_neutral {
+ 	background-image: url("imgs/icon_neutral.png");	
+ }
+ 
+ #titulo-centro {
+ 	text-align: center;
+ 	padding: 10px;
+ }

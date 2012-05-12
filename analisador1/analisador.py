@@ -26,8 +26,18 @@ def sentiment(text):
     Returns a float for sentiment strength based on the input text.
     Positive values are positive valence, negative value are negative valence. 
     """
-    words = pattern_split.split(text.lower())
-    sentiments = map(lambda word: afinn.get(word, 0), words)
+    try:
+        query = text.split(".:.")[1]
+        text = text.split(".:.")[0]
+        
+        words = pattern_split.split(text.lower())
+        sentiments = map(lambda word: afinn.get(word, 0) if query.find(word) == -1 else 0, words)
+    except:
+        words = pattern_split.split(text.lower())
+        sentiments = map(lambda word: afinn.get(word, 0), words)
+
+    
+    
     if sentiments:
         # How should you weight the individual word sentiments? 
         # You could do N, sqrt(N) or 1 for example. Here I use sqrt(N)

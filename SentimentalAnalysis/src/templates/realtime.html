@@ -7,75 +7,231 @@
     <link href="/static/style.css" rel="stylesheet" type="text/css" media="screen"/>
   </head>
   
+  <!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="/static/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript">
+
+      // Load the Visualization API and the piechart package.
+      google.load('visualization', '1.0', {'packages':['corechart']});
+
+      // Set a callback to run when the Google Visualization API is loaded.
+      google.setOnLoadCallback(createCharts);
+
+	  function createCharts() {
+		  drawChart('chart_div1', {{stats.0.pos}}, {{stats.0.neutral}}, {{stats.0.neg}});
+		  drawChart('chart_div2', {{stats.1.pos}}, {{stats.1.neutral}}, {{stats.1.neg}});
+		  drawChart('chart_div3', {{stats.2.pos}}, {{stats.2.neutral}}, {{stats.2.neg}});
+	  }
+      
+      // Callback that creates and populates a data table,
+      // instantiates the pie chart, passes in the data and
+      // draws it.
+      function drawChart(destino, value1, value2, value3) {
+
+        // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Sentiment');
+        data.addColumn('number', 'Slices');
+        data.addRows([
+          ['Positivo', value1],
+		  ['', 0],
+		  ['', 0],
+		  ['', 0],
+		  ['', 0],
+		  ['', 0],
+		  ['', 0],
+		  ['', 0],
+		  ['', 0],
+		  ['', 0],
+		  ['', 0],
+		  ['', 0],
+		  ['', 0],
+		  ['', 0],
+		  ['Neutro', value2],
+          ['Negativo', value3],
+        ]);
+
+        // Set chart options
+        var options = {
+                	   	'title':'',
+					   	'is3D':true,
+                       	'width':343,
+                       	'height':200,
+                       	'backgroundColor': { 'fill': "#BEBEBE" }
+                       };
+
+        // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.PieChart(document.getElementById(destino));
+        chart.draw(data, options);
+      }
+    </script>
+    
+
+  
   <body>
       <div id="titulo">
             Titulo
       </div>
   
-      <div id="busca">
-            Campo da Busca
-      </div>
+      <div id="div-busca" class="busca-realtime">
+			<form action="/realtime" method="get">
+				<input id="search" name="q" type="text" placeholder="Santorum, Paul McCartney, Harrison Ford..."
+					style="margin-top: 7px; height: 36px;">
+				<button class="btn btn-large btn-inverse" id="artist_submit" type="submit"
+					style="margin-top: 7px;"><i class="icon-search"></i></button>
+			</form>
+	  </div>
+	  
+	  <br style="clear: both;" />
+	  <br style="clear: both;" />
       
       <div id="conteudo">
             <div id="subitem1" class="subitem">
-                Positivo = {{stats.0.pos}} - {% widthratio stats.0.pos tweets|length 100 %}% <br />
+                <div id="chart_div1"></div>
+                <!-- Positivo =  {{stats.0.pos}} - {% widthratio stats.0.pos tweets|length 100 %}% <br />
                 Neutro = {{stats.0.neutral}} - {% widthratio stats.0.neutral tweets|length 100 %}% <br />
-                Negativo = {{stats.0.neg}} - {% widthratio stats.0.neg tweets|length 100 %}% <br />
+                Negativo = {{stats.0.neg}} - {% widthratio stats.0.neg tweets|length 100 %}% <br />-->
             </div>
             
             <div id="subitem2" class="subitem">
-                Positivo = {{stats.1.pos}} - {% widthratio stats.1.pos tweets|length 100%}% <br />
+            	<div id="chart_div2"></div>
+                <!-- Positivo = {{stats.1.pos}} - {% widthratio stats.1.pos tweets|length 100%}% <br />
                 Neutro = {{stats.1.neutral}} - {% widthratio stats.1.neutral tweets|length 100 %}% <br />
-                Negativo = {{stats.1.neg}} - {% widthratio stats.1.neg tweets|length 100 %}% <br />
+                Negativo = {{stats.1.neg}} - {% widthratio stats.1.neg tweets|length 100 %}% <br /> -->
             </div>
             
             <div id="subitem3" class="subitem">
-            	Positivo = {{stats.2.pos}} - {% widthratio stats.2.pos tweets|length 100%}% <br />
+            	<div id="chart_div3"></div>
+            	<!--Positivo = {{stats.2.pos}} - {% widthratio stats.2.pos tweets|length 100%}% <br />
                 Neutro = {{stats.2.neutral}} - {% widthratio stats.2.neutral tweets|length 100%}% <br />
-                Negativo = {{stats.2.neg}} - {% widthratio stats.2.neg tweets|length 100%}% <br />
+                Negativo = {{stats.2.neg}} - {% widthratio stats.2.neg tweets|length 100%}% <br /> -->
             </div>
             
             <br style="clear: both;" />
       </div>
       
+      
+      
       <div id="lateral-esquerda">
-            Top User: <br/>
-            {% for user in top_users %}
-                {{ user.0 }} - {{ user.1 }} <br />
-            {% endfor %}
+      
+      		<div id="top_list">
+				<table>	
+					<tr><td colspan=3 align="center" class="subtitulo">Top Users</td></tr>
+					{% for user in top_users %}
+					<tr>
+						<td width="110px" style="max-width: 100px;">{{ user.0 }}</td>
+						<td width="120px" style="max-width: 120px">
+							<div class="barra" style="width: 10px">&nbsp;</div>
+						</td>
+						<td width="20px" style="max-width:20px; overflow: hidden; text-align: right;">{{ user.1 }}</td>
+					</tr>
+					{% endfor %}
+				</table>
+			</div>           
             
             <br />
+            
+            <div id="top_list">
+				<table>	
+					<tr><td colspan=3 align="center" class="subtitulo">Top Words</td></tr>
+					{% for word in top_words %}
+					<tr>
+						<td width="110px" style="max-width: 100px;">{{ word.0 }}</td>
+						<td width="120px" style="max-width: 120px">
+							<div class="barra" style="width: 10px">&nbsp;</div>
+						</td>
+						<td width="20px" style="max-width:20px; overflow: hidden; text-align: right;">{{ word.1 }}</td>
+					</tr>
+					{% endfor %}
+				</table>
+			</div>  
+                       
             <br />
             
-            Top Word: <br />
-            {% for word in top_words %}
-                {{ word.0 }} - {{ word.1 }} <br />
-            {% endfor %}
-            
-            <br />
-            <br />
-            
-            Top Hashtag: <br />
-            {% for ht in top_hashtags %}
-                {{ ht.0 }} - {{ ht.1 }} <br />
-            {% endfor %}
+            <div id="top_list">
+				<table>	
+					<tr><td colspan=3 align="center" class="subtitulo">Top Hashtag</td></tr>
+					{% for ht in top_hashtags %}
+					<tr>
+						<td width="110px" style="max-width: 100px;">{{ ht.0 }}</td>
+						<td width="120px" style="max-width: 120px">
+							<div class="barra" style="width: 10px">&nbsp;</div>
+						</td>
+						<td width="20px" style="max-width:20px; overflow: hidden; text-align: right;">{{ ht.1 }}</td>
+					</tr>
+					{% endfor %}
+				</table>
+			</div>
       </div>
       
       <div id="centro">
-            {% for tweet, a1, a2, a3 in tweets %}
-                <span title="{{a1.prob}}">{{ a1.label }}</span> 
-                <span title="{{a2.prob}}">{{ a2.label }}</span> 
-                <span title="{{a3.prob}}">{{ a3.label }}</span> <br/>
-                
-                {{ tweet.text }} <br/>
-                {{ tweet.user }} <br/>
-                {{ tweet.date }} <br/> <br/> <br/>                
-            {% endfor %}
-      </div>
+      	<div id="titulo-centro" class="subtitulo">Tweets</div>
+      	<ul id="feed">
+      	{% for tweet, a1, a2, a3 in tweets %}
+      	   <!-- <span title="{{a1.prob}}">{{ a1.label }}</span> 
+            <span title="{{a2.prob}}">{{ a2.label }}</span> 
+            <span title="{{a3.prob}}">{{ a3.label }}</span> <br style="clear: both;"/>-->
+			<li id="tweet">
+				<div id="icon" class="icon_{{a2.label}}"></div>
+			
+				<div class="foto">
+					<img src="{{tweet.image}}"></img>
+				</div>
+				
+				<div class="texto">
+					{{ tweet.text }}<br/>
+					@<a href="http://www.google.com" target="_blank">{{ tweet.user }}</a> :: {{ tweet.date }}
+				</div>
+			</li>
+		{% endfor %}
+		</ul>
+	  </div>
+	  
+	  	<script type="text/javascript">
+		$(document).ready(function() {
+			$('div#top_list').each(function(index) {
+				$('table tr td').each(function(index) {
+					var size = 120-(120/$(this).next().text());
+					if (size == 0)
+						size = 30;
+					$(this).children('div.barra').css('width', size);
+				});
+			});
+
+			$('input#chk_pos').click(function() {
+				$('ul#feed li').children('div#icon').each(function(index) {
+					if ($(this).hasClass('icon_pos')) {
+						$(this).parent().toggle('slow');
+					}
+				});
+			});
+
+			$('input#chk_neutral').click(function() {
+				$('ul#feed li').children('div#icon').each(function(index) {
+					if ($(this).hasClass('icon_neutral')) {
+						$(this).parent().toggle('slow');
+					}
+				});
+			});
+
+			$('input#chk_neg').click(function() {
+				$('ul#feed li').children('div#icon').each(function(index) {
+					if ($(this).hasClass('icon_neg')) {
+						$(this).parent().toggle('slow');
+					}
+				});
+			});
+		});
+    </script>
       
       <div id="lateral-direita">
       		Tamanho Real = {{size}} <br />
-            Tamanho Analisado = {{tweets|length}}
+            Tamanho Analisado = {{tweets|length}} <br />
+            
+            <input type="checkbox" id="chk_pos" value="pos" checked>Positivo </input> <br />
+            <input type="checkbox" id="chk_neutral" value="neutral" checked>Neutro </input> <br />
+            <input type="checkbox" id="chk_neg" value="neg" checked>Negativo </input> <br />
       </div>
   
   </body>

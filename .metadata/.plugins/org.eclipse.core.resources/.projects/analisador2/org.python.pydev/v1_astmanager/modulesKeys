@@ -1,7 +1,7 @@
 MODULES_MANAGER_V2
-analisador|E:\Workspace\WS_TG\analisador2\analisador.py
 analisador_modificado|E:\Workspace\WS_TG\analisador2\analisador_modificado.py
 connection|E:\Workspace\WS_TG\analisador2\connection.py
+experimento_precisao|E:\Workspace\WS_TG\analisador2\experimento_precisao.py
 nltk.__init__|E:\Workspace\WS_TG\analisador2\nltk\__init__.py
 nltk.align|E:\Workspace\WS_TG\analisador2\nltk\align.py
 nltk.app.__init__|E:\Workspace\WS_TG\analisador2\nltk\app\__init__.py
@@ -206,4 +206,3 @@ nltk.tree|E:\Workspace\WS_TG\analisador2\nltk\tree.py
 nltk.treetransforms|E:\Workspace\WS_TG\analisador2\nltk\treetransforms.py
 nltk.util|E:\Workspace\WS_TG\analisador2\nltk\util.py
 nltk.yamltags|E:\Workspace\WS_TG\analisador2\nltk\yamltags.py
-test|E:\Workspace\WS_TG\analisador2\test.py

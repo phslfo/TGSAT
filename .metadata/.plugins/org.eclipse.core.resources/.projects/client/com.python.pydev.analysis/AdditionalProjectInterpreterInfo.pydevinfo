@@ -11,11 +11,10 @@ client1|0|E:\Workspace\WS_TG\client\client1.py
 2=client1
 -- END DICTIONARY
 -- START TREE 1
-6
+5
 dat|2|data!11@data!19@
 hos|2|HOST!11@HOST!19@
 por|2|PORT!11@PORT!19@
-pro|1|problema!11@
 s|2|s!11@s!19@
 tes|1|teste!11@
 -- END TREE

@@ -14,7 +14,7 @@ fake_list = [
             {'user_id': u'56798817', 'image': u'https://si0.twimg.com/profile_images/436378567/UHFinal1_normal.jpg', 'tweet_id': u'179925403819974656', 'user': u'poorservant', 'date': datetime.datetime(2012, 3, 14, 13, 42, 13), 'text': u'@faithsone ㅋㅋㅋ u so smart & progressive. i thou\'ght u were like @moontoseu or rick santorum ^^;'},
         ]
  
-def get_realtime_tweets(query, get_realtime=True):
+def get_realtime_tweets(query, size=500, get_realtime=True):
     
     if not get_realtime:
         return fake_list
@@ -22,8 +22,8 @@ def get_realtime_tweets(query, get_realtime=True):
     api = tweepy.API()
    
     tweets = []
-    for page in tweepy.Cursor(api.search, q=query).pages():
-        for status in page:
+    for status in tweepy.Cursor(api.search, q=query, rpp=100).items(size):
+        #for status in page:
             d = {
                     'user'      : status.from_user,
                     'user_id'   : status.from_user_id_str,
