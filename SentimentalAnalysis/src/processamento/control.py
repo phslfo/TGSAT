@@ -13,7 +13,7 @@ def top_words(tweets_list, number=10):
     words = {}    
     words_gen = (word.strip(punctuation).lower() for tweet in tweets_list
                                                  for word in tweet['text'].split()
-                                                    if len(word) > 3 and word not in ignore_words)
+                                                    if len(word) > 4 and word not in ignore_words)
     
     for word in words_gen:
         words[word] = words.get(word, 0) + 1
@@ -28,7 +28,8 @@ def top_hashtags(tweets_list, number=10):
     words = {}    
     words_gen = (word.strip().lower() for tweet in tweets_list
                                                  for word in tweet['text'].split()
-                                                    if word.startswith('#'))
+                                                    if word.startswith('#') and
+                                                    len(word) > 4)
     
     for word in words_gen:
         words[word] = words.get(word, 0) + 1
@@ -70,8 +71,9 @@ def analise(tweets_list, query, my_queue, d1, d2, d3):
         
         if text_without_accents:        
             analise1 = textprocessing.adapter.query(text_without_accents) if d1 else {'label' : 'off'}
-            analise2 = analyse2(text_without_accents, query) if d2 else {'label' : 'off'}
-            analise3 = analyse3(text_without_accents, query) if d3 else {'label' : 'off'}
+#            analise1 = analyse_bayes_csv(text_without_accents, query) if d1 else {'label' : 'off'}
+            analise2 = analyse_bayes(text_without_accents, query) if d2 else {'label' : 'off'}
+            analise3 = analyse_affin(text_without_accents, query) if d3 else {'label' : 'off'}
         
             my_queue.put((tweet, analise1, analise2, analise3))
         
@@ -94,7 +96,7 @@ def analysis_sentimental(tweets_list, query, number=2, d1=True, d2=True, d3=True
     
     return lista
 
-def analyse2(text, query):
+def analyse_affin(text, query):
     import ast
     
     HOST = 'localhost'    # The remote host
@@ -107,11 +109,11 @@ def analyse2(text, query):
         data = s.recv(1024)
         s.close()
     except Exception:
-        return "erro"
+        return {'label' : 'erro'}
     
     return ast.literal_eval(data)
 
-def analyse3(text, query):
+def analyse_bayes(text, query):
     import ast
     
     HOST = 'localhost'    # The remote host
@@ -124,6 +126,23 @@ def analyse3(text, query):
         data = s.recv(1024)
         s.close()
     except Exception:
-        return "erro"
+        return {'label' : 'erro'}
+    
+    return ast.literal_eval(data)
+
+def analyse_bayes_csv(text, query):
+    import ast
+    
+    HOST = 'localhost'    # The remote host
+    PORT = 7003           # The same port as used by the server
+    
+    try:
+        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        s.connect((HOST, PORT))
+        s.sendall(str(text))
+        data = s.recv(1024)
+        s.close()
+    except Exception:
+        return {'label' : 'erro'}
     
     return ast.literal_eval(data)

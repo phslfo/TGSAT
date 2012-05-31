@@ -56,7 +56,7 @@ body {
 
 #div-busca input {
 	float: left;
-	width: 480px;
+	width: 475px;
 	height: 40px;
 	font-size: 20px;
 	line-height: 24px;
@@ -67,6 +67,7 @@ body {
 	border: 1px solid #CCC;
 	color: #555;
 	margin: -5px 0 0 10px;
+	padding-left: 5px;
 }
 
 #div-busca input:focus {
@@ -186,6 +187,7 @@ body {
 }
 
 .subtitulo {
+	color: #AA142B;
 	font-weight: bold;
 	font-size: 1em!important;
 	padding-bottom: 10px!important;
@@ -200,24 +202,26 @@ body {
 }
 
 #top_list .barra {
-	background:#0060B6 none repeat scroll 0 0; 
+	/* #0060B6 - Azul */
+	background:#AA142B none repeat scroll 0 0; 
 	-webkit-border-radius: 2px;
 	height: 12px;
 }
 
 #centro {
     width: 550px;
-    min-height: 200px;
     margin: 15px;
     -webkit-border-radius: 10px;
     float: left;
-    background: #bebebe;
+    background: #ccc;
 }
 
 #lateral-direita {
-    width: 239px;
-    min-height: 200px;
+    width: 229px;
+    min-height: 166px;
     margin: 15px;
+    
+    padding: 3px 0 0 10px;
     
     float: left;
     
@@ -225,10 +229,25 @@ body {
     -webkit-border-radius: 10px;
 }
 
+#chk_pos, #chk_neutral, #chk_neg {
+	margin: 10px 0 0 20px;	
+}
+
+.blabla {
+	font-size: 0.75em;
+	color: #444;	
+}
+
 #feed {
 	margin: 0;
 	padding: 0;
 }
+
+ #titulo-centro {
+ 	color: #AA142B;
+ 	text-align: center;
+ 	padding-bottom: 10px;
+ }
 
 #tweet {
 	background: #EBEBEB;	
@@ -249,7 +268,7 @@ body {
 
 #tweet div.texto {
 	width: 400px;
-	height: 58px;
+	height: 60px;
 	padding-left: 10px;
 	vertical-align: middle;
 	display: table-cell;
@@ -262,31 +281,54 @@ body {
 	text-decoration: none;
  }
  
- #tweet div.texto a:hover {
+#tweet div.texto a:hover {
 	color: #AA142B;
 	text-decoration: underline;
- }
+}
  
- #icon {
+#icon {
  	float: right;
 	margin: 5px 5px 0 0;
 	width: 48px;
 	height: 48px;
- }
+}
  
- .icon_pos {
+.icon_pos {
  	background-image: url("imgs/icon_pos.png");	
- }
+}
  
-  .icon_neg {
+.icon_neg {
  	background-image: url("imgs/icon_neg.png");	
- }
+}
  
-  .icon_neutral {
- 	background-image: url("imgs/icon_neutral.png");	
- }
+.icon_neutral {
+	background-image: url("imgs/icon_neutral.png");	
+}
  
- #titulo-centro {
- 	text-align: center;
- 	padding: 10px;
- }
+#mais {
+	cursor: pointer;
+	margin-top: 0;
+	margin-bottom: 10px;
+	width: 95%;
+	height: 40px;
+	font-size: 13px;
+	font-weight: bold;
+	text-transform: lowercase;
+	text-align: center;
+	color: #666;
+	background: white;
+	border: 1px solid #666;
+	border-radius: 4px;
+	background: -moz-linear-gradient(top,white 75%,#ECECEC);
+	background: -webkit-gradient(linear,0% 50%,0% 100%,from(white),to(#ECECEC));
+	background: -o-linear-gradient(top,white 75%,#ECECEC);
+	background: linear-gradient(top,white 75%,#ECECEC);
+}
+
+#mais:hover {
+	text-decoration: underline;
+}
+
+.esconder-excesso {
+	display: none!important;
+}

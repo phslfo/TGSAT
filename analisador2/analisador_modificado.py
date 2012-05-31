@@ -8,7 +8,6 @@ ignore_words = ['rick']
 class Classificador:
     
     def __init__(self, train1=True, train2=True, test=(0,0), train=(0,0)):
-        
         self.trainfeats = []        
         
         if train1 or test != (0,0):
@@ -53,9 +52,9 @@ class Classificador:
         prob = self.classifier.prob_classify(feats)._prob_dict
             
         avg = abs(prob['neg']) + prob['pos']
-        if avg > 0:
+        if avg > -2.0:
             return {'label' : 'pos', 'prob' : avg}
-        elif abs(avg) > 2.5:
+        elif avg < -3.5:
             return {'label' : 'neg', 'prob' : avg}
         else:
             return {'label' : 'neutral', 'prob' : avg}

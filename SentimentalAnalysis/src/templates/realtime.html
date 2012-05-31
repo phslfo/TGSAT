@@ -70,14 +70,14 @@
 
   
   <body>
-      <div id="titulo">
+      <div id="titulo" style="display: none;">
             Titulo
       </div>
   
       <div id="div-busca" class="busca-realtime">
 			<form action="/realtime" method="get">
 				<input id="search" name="q" type="text" placeholder="Santorum, Paul McCartney, Harrison Ford..."
-					style="margin-top: 7px; height: 36px;">
+					style="margin-top: 7px; height: 36px;" value="{{query}}">
 				<button class="btn btn-large btn-inverse" id="artist_submit" type="submit"
 					style="margin-top: 7px;"><i class="icon-search"></i></button>
 			</form>
@@ -115,23 +115,6 @@
       
       <div id="lateral-esquerda">
       
-      		<div id="top_list">
-				<table>	
-					<tr><td colspan=3 align="center" class="subtitulo">Top Users</td></tr>
-					{% for user in top_users %}
-					<tr>
-						<td width="110px" style="max-width: 100px;">{{ user.0 }}</td>
-						<td width="120px" style="max-width: 120px">
-							<div class="barra" style="width: 10px">&nbsp;</div>
-						</td>
-						<td width="20px" style="max-width:20px; overflow: hidden; text-align: right;">{{ user.1 }}</td>
-					</tr>
-					{% endfor %}
-				</table>
-			</div>           
-            
-            <br />
-            
             <div id="top_list">
 				<table>	
 					<tr><td colspan=3 align="center" class="subtitulo">Top Words</td></tr>
@@ -146,7 +129,7 @@
 					{% endfor %}
 				</table>
 			</div>  
-                       
+			                       
             <br />
             
             <div id="top_list">
@@ -163,20 +146,41 @@
 					{% endfor %}
 				</table>
 			</div>
+			
+			<br />
+			
+			<div id="top_list">
+				<table>	
+					<tr><td colspan=3 align="center" class="subtitulo">Top Users</td></tr>
+					{% for user in top_users %}
+					<tr>
+						<td width="110px" style="max-width: 100px;">{{ user.0 }}</td>
+						<td width="120px" style="max-width: 120px">
+							<div class="barra" style="width: 10px">&nbsp;</div>
+						</td>
+						<td width="20px" style="max-width:20px; overflow: hidden; text-align: right;">{{ user.1 }}</td>
+					</tr>
+					{% endfor %}
+				</table>
+			</div> 
       </div>
       
       <div id="centro">
       	<div id="titulo-centro" class="subtitulo">Tweets</div>
+      	<div id="nada" style="text-align: center; color: #666; padding: 10px; background: #ebebeb; 
+      		margin-bottom: 31px; display: none;">Modifique os filtros!</div>
+      	
       	<ul id="feed">
       	{% for tweet, a1, a2, a3 in tweets %}
       	   <!-- <span title="{{a1.prob}}">{{ a1.label }}</span> 
             <span title="{{a2.prob}}">{{ a2.label }}</span> 
             <span title="{{a3.prob}}">{{ a3.label }}</span> <br style="clear: both;"/>-->
-			<li id="tweet">
-				<div id="icon" class="icon_{{a2.label}}"></div>
+			<li id="tweet" {% if forloop.counter > 20 %} class="esconder-excesso" {% endif %}>
+				
+				<div id="icon" class="icon_{{a2.label}}" title="{{a2.prob}}"></div>
 			
 				<div class="foto">
-					<img src="{{tweet.image}}"></img>
+					<img src="{{tweet.image}}" style="width: 48px; height: 48px;"></img>
 				</div>
 				
 				<div class="texto">
@@ -186,52 +190,114 @@
 			</li>
 		{% endfor %}
 		</ul>
+		
+		<div style="text-align: center;">
+			<button id="mais">Ver mais</button>
+		</div>
 	  </div>
 	  
 	  	<script type="text/javascript">
 		$(document).ready(function() {
-			$('div#top_list').each(function(index) {
-				$('table tr td').each(function(index) {
-					var size = 120-(120/$(this).next().text());
-					if (size == 0)
-						size = 30;
-					$(this).children('div.barra').css('width', size);
+
+			if ($('ul#feed li#tweet:last-child').is('li:visible'))
+				$('button#mais').hide();
+
+			$('div#top_list table tr td').each(function(index) {
+
+				var max_size = $(this).parent().parent().children(':first').next().children(':last').text();
+				var current_size = $(this).next().text();
+				
+				var size = (110*current_size/max_size) + 10;
+				
+				$(this).children('div.barra').css('width', size);
+			});
+
+			$('#centro').bind('heightChange', function(){
+				$('#nada').hide();
+		        if ($('#centro').height() < 100)
+		        	$('#nada').show();
+		        else
+		        	$('#nada').hide();
+		    });
+
+			$('button#mais').click(function() {
+				var qtd = 0;
+								
+				$('ul#feed li#tweet').each(function(index) {
+					if ($(this).hasClass('esconder-excesso') && qtd < 20 ) {
+						$(this).removeClass('esconder-excesso');
+						qtd++;
+					}
+
+					if (!$('ul#feed li#tweet:last-child').hasClass('esconder-excesso'))
+						$('button#mais').hide();					
 				});
+				
+				$("#centro").trigger('heightChange');
 			});
 
 			$('input#chk_pos').click(function() {
 				$('ul#feed li').children('div#icon').each(function(index) {
 					if ($(this).hasClass('icon_pos')) {
-						$(this).parent().toggle('slow');
+						if ($('input#chk_pos').is(':checked'))
+							$(this).parent().css('display', 'block');
+						else
+							$(this).parent().css('display', 'none');
+							
 					}
 				});
+				$("#centro").trigger('heightChange');
 			});
 
 			$('input#chk_neutral').click(function() {
 				$('ul#feed li').children('div#icon').each(function(index) {
 					if ($(this).hasClass('icon_neutral')) {
-						$(this).parent().toggle('slow');
+						if ($('input#chk_neutral').is(':checked'))
+							$(this).parent().css('display', 'block');
+						else
+							$(this).parent().css('display', 'none');
 					}
 				});
+				$("#centro").trigger('heightChange');
 			});
 
 			$('input#chk_neg').click(function() {
 				$('ul#feed li').children('div#icon').each(function(index) {
 					if ($(this).hasClass('icon_neg')) {
-						$(this).parent().toggle('slow');
+						if ($('input#chk_neg').is(':checked'))
+							$(this).parent().css('display', 'block');
+						else
+							$(this).parent().css('display', 'none');
 					}
 				});
+				$("#centro").trigger('heightChange');
 			});
+			
 		});
     </script>
+	  
+	  	
       
       <div id="lateral-direita">
-      		Tamanho Real = {{size}} <br />
-            Tamanho Analisado = {{tweets|length}} <br />
+      		<span style="font-weight: bold; color: #AA142B;">Tamanho Real: </span> {{size}} ({{tweets|length}}) 
+      		<br />            
+            <br/>
+            <span style="font-weight: bold; color: #AA142B;"> Filtros: </span> <br/>
             
-            <input type="checkbox" id="chk_pos" value="pos" checked>Positivo </input> <br />
-            <input type="checkbox" id="chk_neutral" value="neutral" checked>Neutro </input> <br />
-            <input type="checkbox" id="chk_neg" value="neg" checked>Negativo </input> <br />
+            <input type="checkbox" id="chk_pos" value="pos" checked /> 
+            <span class="blabla"> Positivo 
+            <img src="/static/imgs/icon_pos.png" style="width: 20px; height: 20px; position: absolute; padding:7px 7px 7px 12px"></img> 
+            </span> <br />
+            
+            <input type="checkbox" id="chk_neutral" value="neutral" checked /> 
+            <span class="blabla"> Neutro 
+            <img src="/static/imgs/icon_neutral.png" style="width: 20px; height: 20px; position: absolute; padding:7px 7px 7px 17px"></img> 
+            </span> <br />
+            
+            <input type="checkbox" id="chk_neg" value="neg" checked /> 
+            <span class="blabla"> Negativo 
+            <img src="/static/imgs/icon_neg.png" style="width: 20px; height: 20px; position: absolute; padding:7px"></img> 
+            </span> <br />
       </div>
   
   </body>
