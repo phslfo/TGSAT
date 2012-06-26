@@ -497,7 +497,7 @@ convince	1
 convinced	1
 convinces	1
 convivial	2
-cool	1
+cool	2
 cool stuff	3
 cornered	-2
 corpse	-1
@@ -551,7 +551,7 @@ cynical	-2
 cynicism	-2
 damage	-3
 damages	-3
-damn	-4
+damn	-3
 damned	-4
 damnit	-4
 danger	-2

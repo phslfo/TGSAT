@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="38" version="2.0">
+<workbench progressCount="43" version="2.0">
 <workbenchAdvisor/>
 <window height="738" maximized="true" width="1024" x="150" y="0">
 <fastViewData fastViewLocation="1024"/>
@@ -23,9 +23,10 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="190" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.compare.CompareEditor" itemType="typePlaceholder" x="84" y="22"/>
 <coolItem id="org.eclipse.wst.css.core.csssource.source" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.html.core.htmlsource.source" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.python.pydev.editor.PythonEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -41,29 +42,44 @@
 <part id="2"/>
 <part id="3"/>
 <part id="4"/>
+<part id="5"/>
+<part id="6"/>
+<part id="7"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.python.pydev.editor.PythonEditor" name="views.py" partName="views" path="E:/Workspace/WS_TG/SentimentalAnalysis/src/realtime/views.py" title="views" tooltip="SentimentalAnalysis/src/realtime/views.py" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SentimentalAnalysis/src/realtime/views.py"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="535" selectionTopPixel="110"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.wst.html.core.htmlsource.source" name="realtime.html" partName="realtime.html" path="E:/Workspace/WS_TG/SentimentalAnalysis/src/templates/realtime.html" title="realtime.html" tooltip="SentimentalAnalysis/src/templates/realtime.html" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SentimentalAnalysis/src/templates/realtime.html"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="7358" selectionTopPixel="3316"/>
-</editor>
-<editor id="org.eclipse.wst.css.core.csssource.source" name="style.css" partName="style.css" path="E:/Workspace/WS_TG/SentimentalAnalysis/src/templates/static/style.css" title="style.css" tooltip="SentimentalAnalysis/src/templates/static/style.css" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SentimentalAnalysis/src/templates/static/style.css"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4715" selectionTopPixel="4131"/>
-</editor>
-<editor id="org.python.pydev.editor.PythonEditor" name="control.py" partName="control" path="E:/Workspace/WS_TG/SentimentalAnalysis/src/realtime/control.py" title="control" tooltip="SentimentalAnalysis/src/realtime/control.py" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SentimentalAnalysis/src/realtime/control.py"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2683" selectionTopPixel="0"/>
+<editor id="org.eclipse.ui.DefaultTextEditor" name="info.txt" partName="info.txt" path="E:/Workspace/WS_TG/api/info.txt" title="info.txt" tooltip="api/info.txt" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/api/info.txt"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="221" selectionTopPixel="0"/>
 </editor>
 <editor id="org.eclipse.wst.html.core.htmlsource.source" name="index.html" partName="index.html" path="E:/Workspace/WS_TG/SentimentalAnalysis/src/templates/index.html" title="index.html" tooltip="SentimentalAnalysis/src/templates/index.html" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SentimentalAnalysis/src/templates/index.html"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="542" selectionTopPixel="52"/>
+<editorState selectionHorizontalPixel="23" selectionLength="23" selectionOffset="975" selectionTopPixel="305"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.wst.html.core.htmlsource.source" name="realtime.html" partName="realtime.html" path="E:/Workspace/WS_TG/SentimentalAnalysis/src/templates/realtime.html" title="realtime.html" tooltip="SentimentalAnalysis/src/templates/realtime.html" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SentimentalAnalysis/src/templates/realtime.html"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3060" selectionTopPixel="1306"/>
+</editor>
+<editor id="org.python.pydev.editor.PythonEditor" name="views.py" partName="views" path="E:/Workspace/WS_TG/SentimentalAnalysis/src/realtime/views.py" title="views" tooltip="SentimentalAnalysis/src/realtime/views.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SentimentalAnalysis/src/realtime/views.py"/>
+<editorState selectionHorizontalPixel="96" selectionLength="0" selectionOffset="564" selectionTopPixel="178"/>
+</editor>
+<editor id="org.python.pydev.editor.PythonEditor" name="control.py" partName="control" path="E:/Workspace/WS_TG/SentimentalAnalysis/src/processamento/control.py" title="control" tooltip="SentimentalAnalysis/src/processamento/control.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SentimentalAnalysis/src/processamento/control.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="485" selectionTopPixel="0"/>
+</editor>
+<editor id="org.python.pydev.editor.PythonEditor" name="__init__.py" partName="libs" path="E:/Workspace/WS_TG/SentimentalAnalysis/src/libs/__init__.py" title="libs" tooltip="SentimentalAnalysis/src/libs/__init__.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SentimentalAnalysis/src/libs/__init__.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="48" selectionTopPixel="0"/>
+</editor>
+<editor id="org.python.pydev.editor.PythonEditor" name="__init__.py" partName="lymbix" path="E:/Workspace/WS_TG/SentimentalAnalysis/src/libs/lymbix/__init__.py" title="lymbix" tooltip="SentimentalAnalysis/src/libs/lymbix/__init__.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SentimentalAnalysis/src/libs/lymbix/__init__.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="128" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.wst.css.core.csssource.source" name="style.css" partName="style.css" path="E:/Workspace/WS_TG/SentimentalAnalysis/src/templates/static/style.css" title="style.css" tooltip="SentimentalAnalysis/src/templates/static/style.css" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SentimentalAnalysis/src/templates/static/style.css"/>
+<editorState selectionHorizontalPixel="0" selectionLength="5" selectionOffset="1936" selectionTopPixel="1493"/>
 </editor>
 </editors>
 <views>
@@ -152,12 +168,14 @@
 <view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
 <view id="org.python.pydev.navigator.view" partName="PyDev Package Explorer">
 <viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0">
+<expanded IMemento.internal.id="E:/Workspace/WS_TG/api"/>
 <expanded IMemento.internal.id="E:/Workspace/WS_TG/SentimentalAnalysis"/>
 <expanded IMemento.internal.id="E:/Workspace/WS_TG/SentimentalAnalysis/src"/>
-<expanded IMemento.internal.id="E:/Workspace/WS_TG/SentimentalAnalysis/src/realtime"/>
+<expanded IMemento.internal.id="E:/Workspace/WS_TG/SentimentalAnalysis/src/libs"/>
+<expanded IMemento.internal.id="E:/Workspace/WS_TG/SentimentalAnalysis/src/libs/lymbix"/>
 <expanded IMemento.internal.id="E:/Workspace/WS_TG/SentimentalAnalysis/src/templates"/>
 <expanded IMemento.internal.id="E:/Workspace/WS_TG/SentimentalAnalysis/src/templates/static"/>
-<selected IMemento.internal.id="E:/Workspace/WS_TG/SentimentalAnalysis/src/templates/index.html"/>
+<expanded IMemento.internal.id="E:/Workspace/WS_TG/SentimentalAnalysis/src/templates/static/imgs"/>
 </viewState>
 </view>
 <view id="org.eclipse.wst.server.ui.ServersView" partName="Servers"/>
@@ -316,8 +334,8 @@
 <new_wizard_action id="org.eclipse.ui.wizards.new.file"/>
 <new_wizard_action id="org.eclipse.ui.editors.wizards.UntitledTextFileWizard"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
-<view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.python.pydev.navigator.view"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
 <fastViewBars>
 <fastViewBar fastViewLocation="131072" id="org.eclipse.ui.internal.ViewStack@b10618" orientation="512" selectedTabId="org.eclipse.ui.views.ContentOutline" style="0">
 <fastViews>
@@ -349,7 +367,7 @@
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.25721785" ratioLeft="196" ratioRight="566" relationship="2" relative="topLeft"/>
+<info part="org.eclipse.ui.editorss" ratio="0.25" ratioLeft="332" ratioRight="996" relationship="2" relative="topLeft"/>
 <info folder="true" part="bottom" ratio="0.7487844" ratioLeft="462" ratioRight="155" relationship="4" relative="org.eclipse.ui.editorss">
 <folder appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
@@ -370,7 +388,7 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@147e585" ratio="0.8" ratioLeft="504" ratioRight="126" relationship="4" relative="org.eclipse.ui.editorss">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@14b93ab" ratio="0.6761905" ratioLeft="426" ratioRight="204" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
@@ -477,7 +495,7 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.67460316" ratioLeft="425" ratioRight="205" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
+<info part="org.eclipse.ui.editorss" ratio="0.43968254" ratioLeft="277" ratioRight="353" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
 <info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.7498122" ratioLeft="998" ratioRight="333" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
@@ -503,167 +521,171 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/SentimentalAnalysis/src/realtime/views.py"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/analisador2/connection.py"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/SentimentalAnalysis/src/templates/realtime.html"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.css.core.csssource.source" path="/SentimentalAnalysis/src/templates/static/style.css"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/SentimentalAnalysis/src/processamento/control.py"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/SentimentalAnalysis/src/realtime/control.py"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/SentimentalAnalysis/src/templates/realtime2.html"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/SentimentalAnalysis/src/templates/index.html"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/SentimentalAnalysis/src/templates/realtime.html"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/SentimentalAnalysis/src/libs/__init__.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/SentimentalAnalysis/src/libs/alchemy/__init__.py"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/SentimentalAnalysis/src/realtime/views.py"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/SentimentalAnalysis/src/realtime/control.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/SentimentalAnalysis/src/templates/realtime.html"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/api/info.txt"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/SentimentalAnalysis/src/libs/chatterbox/__init__.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/SentimentalAnalysis/src/libs/chatterbox/SentimentAnalysisFree.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/SentimentalAnalysis/src/libs/chatterbox/mashape/config/module_info.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/SentimentalAnalysis/src/libs/chatterbox/mashape/__init__.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/SentimentalAnalysis/src/libs/chatterbox/mashape/config/__init__.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/SentimentalAnalysis/src/libs/lymbix/lymbix.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/SentimentalAnalysis/src/libs/lymbix/__init__.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/SentimentalAnalysis/src/templates/index.html"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.css.core.csssource.source" path="/SentimentalAnalysis/src/templates/static/style.css"/>
 </editors>
-<item historyLabel="views" index="0">
-<position info="not_deleted" x="504" y="0"/>
+<item historyLabel="alchemy" index="2">
+<position info="not_deleted" x="272" y="302"/>
 </item>
-<item historyLabel="control" index="4">
-<position info="not_deleted" x="3027" y="0"/>
+<item historyLabel="control" index="0">
+<position info="not_deleted" x="73" y="0"/>
 </item>
-<item historyLabel="views" index="0">
-<position info="not_deleted" x="374" y="0"/>
+<item historyLabel="libs" index="1">
+<position info="not_deleted" x="60" y="0"/>
 </item>
-<item historyLabel="control" index="5">
-<position info="not_deleted" x="2683" y="0"/>
+<item historyLabel="control" index="0">
+<position/>
 </item>
-<item historyLabel="connection" index="1">
-<position info="not_deleted" x="264" y="0"/>
+<item historyLabel="libs" index="1">
+<position/>
 </item>
-<item historyLabel="realtime.html" index="2">
-<position info="not_deleted" x="6509" y="0"/>
+<item historyLabel="chatterbox" index="6">
+<position info="not_deleted" x="593" y="0"/>
 </item>
-<item historyLabel="style.css" index="3">
-<position info="not_deleted" x="4121" y="0"/>
+<item historyLabel="SentimentAnalysisFree" index="7">
+<position/>
 </item>
-<item historyLabel="realtime2.html" index="6">
+<item historyLabel="chatterbox" index="6">
+<position info="not_deleted" x="600" y="0"/>
+</item>
+<item historyLabel="control" index="0">
+<position/>
+</item>
+<item historyLabel="SentimentAnalysisFree" index="7">
+<position info="not_deleted" x="636" y="0"/>
+</item>
+<item historyLabel="module_info" index="8">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="style.css" index="3">
-<position info="not_deleted" x="4659" y="0"/>
+<item historyLabel="SentimentAnalysisFree" index="7">
+<position info="not_deleted" x="636" y="0"/>
 </item>
-<item historyLabel="index.html" index="7">
+<item historyLabel="control" index="0">
+<position info="not_deleted" x="3243" y="0"/>
+</item>
+<item historyLabel="mashape" index="9">
+<position/>
+</item>
+<item historyLabel="control" index="0">
+<position info="not_deleted" x="3243" y="0"/>
+</item>
+<item historyLabel="chatterbox" index="6">
+<position info="not_deleted" x="540" y="0"/>
+</item>
+<item historyLabel="mashape" index="9">
+<position info="not_deleted" x="11" y="0"/>
+</item>
+<item historyLabel="config" index="10">
+<position info="not_deleted" x="18" y="0"/>
+</item>
+<item historyLabel="control" index="0">
+<position info="not_deleted" x="3243" y="0"/>
+</item>
+<item historyLabel="lymbix" index="11">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="realtime.html" index="8">
-<position info="not_deleted" x="6606" y="0"/>
+<item historyLabel="control" index="0">
+<position info="not_deleted" x="3243" y="0"/>
 </item>
-<item historyLabel="views" index="9">
-<position info="not_deleted" x="563" y="0"/>
+<item historyLabel="lymbix" index="12">
+<position info="not_deleted" x="128" y="0"/>
 </item>
-<item historyLabel="index.html" index="7">
-<position info="not_deleted" x="542" y="0"/>
+<item historyLabel="control" index="0">
+<position info="not_deleted" x="485" y="0"/>
 </item>
-<item historyLabel="views" index="9">
-<position info="not_deleted" x="563" y="0"/>
+<item historyLabel="libs" index="1">
+<position info="not_deleted" x="48" y="0"/>
 </item>
-<item historyLabel="style.css" index="3">
-<position info="not_deleted" x="4659" y="0"/>
-</item>
-<item historyLabel="control" index="10">
-<position info="not_deleted" x="2683" y="0"/>
-</item>
-<item historyLabel="index.html" index="7">
-<position info="not_deleted" x="542" y="0"/>
-</item>
-<item historyLabel="realtime.html" index="8">
-<position info="not_deleted" x="2918" y="0"/>
-</item>
-<item historyLabel="style.css" index="3">
-<position info="not_deleted" x="4659" y="0"/>
-</item>
-<item historyLabel="views" index="9">
-<position info="not_deleted" x="550" y="1"/>
-</item>
-<item historyLabel="realtime.html" index="8">
-<position/>
-</item>
-<item historyLabel="style.css" index="3">
-<position info="not_deleted" x="4375" y="0"/>
-</item>
-<item historyLabel="realtime.html" index="8">
-<position info="not_deleted" x="2817" y="0"/>
-</item>
-<item historyLabel="style.css" index="3">
-<position/>
-</item>
-<item historyLabel="realtime.html" index="8">
-<position info="not_deleted" x="2817" y="0"/>
-</item>
-<item historyLabel="index.html" index="7">
-<position info="not_deleted" x="542" y="0"/>
-</item>
-<item historyLabel="style.css" index="3">
-<position info="not_deleted" x="1666" y="0"/>
-</item>
-<item historyLabel="control" index="10">
-<position info="not_deleted" x="2683" y="0"/>
-</item>
-<item historyLabel="realtime.html" index="8">
-<position info="not_deleted" x="2464" y="22"/>
-</item>
-<item historyLabel="style.css" index="3">
-<position info="not_deleted" x="1636" y="0"/>
-</item>
-<item historyLabel="realtime.html" index="8">
-<position info="not_deleted" x="6474" y="0"/>
-</item>
-<item historyLabel="views" index="9">
-<position info="not_deleted" x="424" y="0"/>
-</item>
-<item historyLabel="realtime.html" index="8">
-<position info="not_deleted" x="6474" y="0"/>
-</item>
-<item historyLabel="views" index="9">
-<position info="not_deleted" x="563" y="0"/>
-</item>
-<item historyLabel="realtime.html" index="8">
-<position/>
-</item>
-<item historyLabel="views" index="9">
+<item historyLabel="views" index="3">
 <position info="not_deleted" x="535" y="0"/>
 </item>
-<item historyLabel="realtime.html" index="8">
-<position info="not_deleted" x="6841" y="0"/>
+<item historyLabel="realtime.html" index="4">
+<position info="not_deleted" x="6973" y="0"/>
 </item>
-<item historyLabel="style.css" index="3">
-<position/>
+<item historyLabel="info.txt" index="5">
+<position info="not_deleted" x="221" y="0"/>
 </item>
-<item historyLabel="realtime.html" index="8">
-<position info="not_deleted" x="7359" y="0"/>
-</item>
-<item historyLabel="style.css" index="3">
-<position info="not_deleted" x="5273" y="0"/>
-</item>
-<item historyLabel="views" index="9">
+<item historyLabel="views" index="3">
 <position info="not_deleted" x="535" y="0"/>
 </item>
-<item historyLabel="realtime.html" index="8">
-<position info="not_deleted" x="7539" y="0"/>
+<item historyLabel="control" index="0">
+<position info="not_deleted" x="485" y="0"/>
 </item>
-<item historyLabel="style.css" index="3">
-<position info="not_deleted" x="4502" y="0"/>
+<item historyLabel="views" index="3">
+<position info="not_deleted" x="535" y="0"/>
 </item>
-<item historyLabel="realtime.html" index="8">
-<position info="not_deleted" x="6173" y="0"/>
+<item historyLabel="views" index="3">
+<position info="not_deleted" x="885" y="105"/>
 </item>
-<item historyLabel="style.css" index="3">
-<position info="not_deleted" x="5358" y="0"/>
+<item historyLabel="realtime.html" index="4">
+<position info="not_deleted" x="251" y="0"/>
 </item>
-<item historyLabel="realtime.html" index="8">
-<position info="not_deleted" x="6173" y="0"/>
+<item historyLabel="index.html" index="13">
+<position/>
 </item>
-<item historyLabel="style.css" index="3">
-<position info="not_deleted" x="5358" y="0"/>
+<item historyLabel="style.css" index="14">
+<position info="not_deleted" x="1936" y="5"/>
 </item>
-<item historyLabel="realtime.html" index="8">
-<position info="not_deleted" x="4941" y="0"/>
+<item historyLabel="index.html" index="13">
+<position info="not_deleted" x="804" y="62"/>
 </item>
-<item historyLabel="style.css" index="3">
-<position info="not_deleted" x="4715" y="0"/>
+<item historyLabel="realtime.html" index="4">
+<position info="not_deleted" x="2976" y="0"/>
 </item>
-<item active="true" historyLabel="realtime.html" index="8">
-<position info="not_deleted" x="4941" y="0"/>
+<item historyLabel="info.txt" index="5">
+<position info="not_deleted" x="221" y="0"/>
+</item>
+<item historyLabel="index.html" index="13">
+<position info="not_deleted" x="420" y="0"/>
+</item>
+<item historyLabel="views" index="3">
+<position info="not_deleted" x="885" y="105"/>
+</item>
+<item historyLabel="views" index="3">
+<position info="not_deleted" x="353" y="0"/>
+</item>
+<item historyLabel="index.html" index="13">
+<position info="not_deleted" x="998" y="0"/>
+</item>
+<item historyLabel="realtime.html" index="4">
+<position info="not_deleted" x="465" y="74"/>
+</item>
+<item historyLabel="index.html" index="13">
+<position info="not_deleted" x="307" y="130"/>
+</item>
+<item historyLabel="realtime.html" index="4">
+<position/>
+</item>
+<item historyLabel="index.html" index="13">
+<position info="not_deleted" x="307" y="130"/>
+</item>
+<item historyLabel="info.txt" index="5">
+<position info="not_deleted" x="221" y="0"/>
+</item>
+<item historyLabel="views" index="3">
+<position info="not_deleted" x="564" y="0"/>
+</item>
+<item historyLabel="realtime.html" index="4">
+<position/>
+</item>
+<item historyLabel="index.html" index="13">
+<position info="not_deleted" x="975" y="23"/>
+</item>
+<item active="true" historyLabel="realtime.html" index="4">
+<position/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -687,50 +709,50 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="index.html" tooltip="SentimentalAnalysis/src/templates/index.html">
-<persistable path="/SentimentalAnalysis/src/templates/index.html"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="circle_loader.gif" tooltip="SentimentalAnalysis/src/templates/static/imgs/circle_loader.gif">
+<persistable path="/SentimentalAnalysis/src/templates/static/imgs/circle_loader.gif"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="realtime2.html" tooltip="SentimentalAnalysis/src/templates/realtime2.html">
-<persistable path="/SentimentalAnalysis/src/templates/realtime2.html"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="ajax-loader.gif" tooltip="SentimentalAnalysis/src/templates/static/imgs/ajax-loader.gif">
+<persistable path="/SentimentalAnalysis/src/templates/static/imgs/ajax-loader.gif"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="control.py" tooltip="SentimentalAnalysis/src/realtime/control.py">
-<persistable path="/SentimentalAnalysis/src/realtime/control.py"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="control.py" tooltip="SentimentalAnalysis/src/processamento/control.py">
-<persistable path="/SentimentalAnalysis/src/processamento/control.py"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="home.html" tooltip="SentimentalAnalysis/src/templates/home.html">
-<persistable path="/SentimentalAnalysis/src/templates/home.html"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="icons.png" tooltip="SentimentalAnalysis/src/templates/static/imgs/icons.png">
-<persistable path="/SentimentalAnalysis/src/templates/static/imgs/icons.png"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="icons-white.png" tooltip="SentimentalAnalysis/src/templates/static/imgs/icons-white.png">
-<persistable path="/SentimentalAnalysis/src/templates/static/imgs/icons-white.png"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="loading.gif" tooltip="SentimentalAnalysis/src/templates/static/imgs/loading.gif">
+<persistable path="/SentimentalAnalysis/src/templates/static/imgs/loading.gif"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.css.core.csssource.source" name="style.css" tooltip="SentimentalAnalysis/src/templates/static/style.css">
 <persistable path="/SentimentalAnalysis/src/templates/static/style.css"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="realtime.html" tooltip="SentimentalAnalysis/src/templates/realtime.html">
-<persistable path="/SentimentalAnalysis/src/templates/realtime.html"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="__init__.py" tooltip="SentimentalAnalysis/src/libs/lymbix/__init__.py">
+<persistable path="/SentimentalAnalysis/src/libs/lymbix/__init__.py"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="connection.py" tooltip="analisador2/connection.py">
-<persistable path="/analisador2/connection.py"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="lymbix.py" tooltip="SentimentalAnalysis/src/libs/lymbix/lymbix.py">
+<persistable path="/SentimentalAnalysis/src/libs/lymbix/lymbix.py"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="views.py" tooltip="SentimentalAnalysis/src/realtime/views.py">
-<persistable path="/SentimentalAnalysis/src/realtime/views.py"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="__init__.py" tooltip="SentimentalAnalysis/src/libs/chatterbox/mashape/config/__init__.py">
+<persistable path="/SentimentalAnalysis/src/libs/chatterbox/mashape/config/__init__.py"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="__init__.py" tooltip="analisador2/nltk/corpus/__init__.py">
-<persistable path="/analisador2/nltk/corpus/__init__.py"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="__init__.py" tooltip="SentimentalAnalysis/src/libs/chatterbox/mashape/__init__.py">
+<persistable path="/SentimentalAnalysis/src/libs/chatterbox/mashape/__init__.py"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="analisador.py" tooltip="analisador1/analisador.py">
-<persistable path="/analisador1/analisador.py"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="module_info.py" tooltip="SentimentalAnalysis/src/libs/chatterbox/mashape/config/module_info.py">
+<persistable path="/SentimentalAnalysis/src/libs/chatterbox/mashape/config/module_info.py"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="analisador.py" tooltip="analisador2/analisador.py">
-<persistable path="/analisador2/analisador.py"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="SentimentAnalysisFree.py" tooltip="SentimentalAnalysis/src/libs/chatterbox/SentimentAnalysisFree.py">
+<persistable path="/SentimentalAnalysis/src/libs/chatterbox/SentimentAnalysisFree.py"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="experimento_precisao.py" tooltip="analisador1/experimento_precisao.py">
-<persistable path="/analisador1/experimento_precisao.py"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="__init__.py" tooltip="SentimentalAnalysis/src/libs/__init__.py">
+<persistable path="/SentimentalAnalysis/src/libs/__init__.py"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="__init__.py" tooltip="SentimentalAnalysis/src/libs/chatterbox/__init__.py">
+<persistable path="/SentimentalAnalysis/src/libs/chatterbox/__init__.py"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="__init__.py" tooltip="SentimentalAnalysis/src/libs/httplib2/__init__.py">
+<persistable path="/SentimentalAnalysis/src/libs/httplib2/__init__.py"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="__init__.py" tooltip="SentimentalAnalysis/src/libs/tweepy/__init__.py">
+<persistable path="/SentimentalAnalysis/src/libs/tweepy/__init__.py"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="__init__.py" tooltip="SentimentalAnalysis/src/libs/textprocessing/__init__.py">
+<persistable path="/SentimentalAnalysis/src/libs/textprocessing/__init__.py"/>
 </file>
 </mruList>
 </workbench>

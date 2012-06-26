@@ -4,8 +4,16 @@
     <title>Twitter Feeling</title>
     
   	<link href="\static\style.css" rel="stylesheet" type="text/css" media="screen"/>
+  	<script type="text/javascript" src="/static/jquery-1.7.2.min.js"></script>
     
   </head>
+  
+  <script type="text/javascript">
+  	function change_icon() {
+		$(".icon-search").hide();
+		$("#loading").show();
+  	}
+  </script>
   
   <body>
   	<div id="wrapper">
@@ -20,10 +28,14 @@
 		<div id="div-busca">
 			<div style="text-align: right;">
 				<form action="/realtime" method="get">
-					<input id="search" name="q" type="text" placeholder="Santorum, Paul McCartney, Harrison Ford...">
-					<button class="btn btn-large btn-inverse" id="artist_submit" type="submit"><i class="icon-search"></i></button>
+					<input id="search" name="q" type="text" placeholder="Prometheus, MIB 3, The Avengers...">
+					<button class="btn btn-large btn-inverse" id="artist_submit" type="submit" onclick="change_icon()">
+						<i class="icon-search"></i>
+						<img id="loading" src="static/imgs/face-loader.gif" style="display: none;">
+					</button>
 				</form>
 			</div>
+					
 		</div>
 	</div>
   </body>

@@ -2,6 +2,7 @@ MODULES_MANAGER_V2
 analisador|E:\Workspace\WS_TG\analisador1\analisador.py
 connection|E:\Workspace\WS_TG\analisador1\connection.py
 experimento_precisao|E:\Workspace\WS_TG\analisador1\experimento_precisao.py
+precisao|E:\Workspace\WS_TG\analisador1\precisao.py
 simplejson.__init__|E:\Workspace\WS_TG\analisador1\simplejson\__init__.py
 simplejson.decoder|E:\Workspace\WS_TG\analisador1\simplejson\decoder.py
 simplejson.encoder|E:\Workspace\WS_TG\analisador1\simplejson\encoder.py

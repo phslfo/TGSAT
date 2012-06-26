@@ -14,12 +14,21 @@ reload(sys)
 #sys.setdefaultencoding('utf-8')
 
 # AFINN-111 is as of June 2011 the most recent version of AFINN
-filenameAFINN = 'AFINN/AFINN-111.txt'
+filenameAFINN = "E:\\Workspace\\WS_TG\\analisador1\\AFINN\\AFINN-111.txt"
 afinn = dict(map(lambda (w, s): (w, int(s)), [ 
             ws.strip().split('\t') for ws in open(filenameAFINN) ]))
 
 # Word splitter pattern
 pattern_split = re.compile(r"\W+")
+
+class Classificador():
+    
+    def __init__(self):
+        import time
+#        time.sleep(10)
+    
+    def analisar(self, text):
+        return sentiment(text)
 
 def sentiment(text):
     """

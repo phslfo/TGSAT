@@ -3,13 +3,20 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Análise de Sentimento em Tempo Real</title>
-    
     <link href="/static/style.css" rel="stylesheet" type="text/css" media="screen"/>
   </head>
   
   <!--Load the AJAX API-->
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript" src="/static/jquery-1.7.2.min.js"></script>
+    
+    <script type="text/javascript">
+  		function change_icon() {
+			$(".icon-search").hide();
+			$("#loading").show();
+  		}
+  	</script>
+    
     <script type="text/javascript">
 
       // Load the Visualization API and the piechart package.
@@ -67,7 +74,7 @@
       }
     </script>
     
-
+    
   
   <body>
       <div id="titulo" style="display: none;">
@@ -76,10 +83,13 @@
   
       <div id="div-busca" class="busca-realtime">
 			<form action="/realtime" method="get">
-				<input id="search" name="q" type="text" placeholder="Santorum, Paul McCartney, Harrison Ford..."
+				<input id="search" name="q" type="text" placeholder="Prometheus, MIB 3, The Avengers..."
 					style="margin-top: 7px; height: 36px;" value="{{query}}">
-				<button class="btn btn-large btn-inverse" id="artist_submit" type="submit"
-					style="margin-top: 7px;"><i class="icon-search"></i></button>
+				<button class="btn btn-large btn-inverse" id="artist_submit" type="submit" 
+				onclick="change_icon()" style="margin-top: 7px;">
+					<i class="icon-search"></i>
+					<img id="loading" src="static/imgs/face-loader.gif" style="display: none;">
+					</button>
 			</form>
 	  </div>
 	  
@@ -175,9 +185,10 @@
       	   <!-- <span title="{{a1.prob}}">{{ a1.label }}</span> 
             <span title="{{a2.prob}}">{{ a2.label }}</span> 
             <span title="{{a3.prob}}">{{ a3.label }}</span> <br style="clear: both;"/>-->
-			<li id="tweet" {% if forloop.counter > 20 %} class="esconder-excesso" {% endif %}>
+            {% if a2.prob >= 0 or a2.prob <= 0 %}
+			<li id="tweet" {% if forloop.counter > 50 %} class="esconder-excesso" {% endif %}>
 				
-				<div id="icon" class="icon_{{a2.label}}" title="{{a2.prob}}"></div>
+				<div id="icon" class="icon_{{a2.label}}" title="{{a1.prob}}|{{a2.prob}}|{{a3.prob}}"></div>
 			
 				<div class="foto">
 					<img src="{{tweet.image}}" style="width: 48px; height: 48px;"></img>
@@ -188,6 +199,7 @@
 					@<a href="http://www.google.com" target="_blank">{{ tweet.user }}</a> :: {{ tweet.date }}
 				</div>
 			</li>
+			{% endif %}
 		{% endfor %}
 		</ul>
 		

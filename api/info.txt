@@ -1,0 +1,24 @@
+http://www.alchemyapi.com/
+896b0a964ba05c0d45ee8f882f95b8907cfb6c2d
+30,000 API calls a day after
+Working... 85%
+
+http://lymbix.com/account
+c6a2c5af610c650d2db35a98ab922741618b734e
+1,000 calls monthly
+Working... 77%
+
+http://chatterbox.co/api/
+Monthly calls limit: 15500
+500 Daily Calls
+Working... 68%
+
+https://www.repustate.com/docs/#api-2
+9ff89bfee51be8070baadfdda72c002e9c83de8b
+25,000 API calls
+Working... 71%
+
+http://www.viralheat.com/developer/dashboard
+http://www.viralheat.com/login
+ZiCSvzemKrQLiXjPxQTg
+Problem... Create new account.

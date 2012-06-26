@@ -3,6 +3,7 @@
 	<name>analisador2</name>
 	<comment></comment>
 	<projects>
+		<project>analisador1</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

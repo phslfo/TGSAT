@@ -13,8 +13,8 @@ def realtime(request):
         query = request.GET.get('q', None)
         
         if query:
-            tweets = control.get_realtime_tweets(query + " -filter:links -RT -@", 1000, True)            
-            tweets_analysed = processamento.control.analysis_sentimental(tweets, query, number=10, d1=False, d2=True, d3=True)
+            tweets = control.get_realtime_tweets(query + " -filter:links -RT -@", 100, True)            
+            tweets_analysed = processamento.control.analysis_sentimental(tweets, query, number=10, d1=False, d2=True, d3=False)
             
             stats = processamento.control.stats_analysis(tweets_analysed)
             

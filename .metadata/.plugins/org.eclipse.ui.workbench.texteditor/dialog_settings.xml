@@ -3,20 +3,26 @@
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="257" key="DIALOG_WIDTH"/>
 		<item value="131" key="DIALOG_Y_ORIGIN"/>
-		<item value="818" key="DIALOG_X_ORIGIN"/>
 		<item value="380" key="DIALOG_HEIGHT"/>
+		<item value="818" key="DIALOG_X_ORIGIN"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="wrap"/>
-		<item value="true" key="casesensitive"/>
 		<item value="false" key="isRegEx"/>
+		<item value="true" key="casesensitive"/>
 		<item value="false" key="incremental"/>
-		<item value="false" key="wholeword"/>
-		<item value="fuck" key="selection"/>
+		<item value="true" key="wholeword"/>
+		<item value="" key="selection"/>
 		<list key="findhistory">
-			<item value="fuck"/>
-			<item value="capsdoc"/>
+			<item value="the avengers is the best movie of the year. I saw that movie on Sunday and I&apos;m still thinking about it."/>
+			<item value="sucks"/>
+			<item value="negative"/>
+			<item value="good"/>
+			<item value="god"/>
+			<item value="damn"/>
+			<item value="cool"/>
+			<item value="ass"/>
 		</list>
 		<list key="replacehistory">
 			<item value=""/>

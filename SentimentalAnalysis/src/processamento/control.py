@@ -1,11 +1,12 @@
 #coding=UTF-8
 
 from string import punctuation
-from libs import textprocessing
+from libs import alchemy
 import socket
 import util
 import threading
 import time
+
 
 ignore_words = ['the', 'this', 'that', 'for', 'and']
 
@@ -70,11 +71,10 @@ def analise(tweets_list, query, my_queue, d1, d2, d3):
         text_without_accents = util.remover_acentos(tweet['text'])
         
         if text_without_accents:        
-            analise1 = textprocessing.adapter.query(text_without_accents) if d1 else {'label' : 'off'}
-#            analise1 = analyse_bayes_csv(text_without_accents, query) if d1 else {'label' : 'off'}
-            analise2 = analyse_bayes(text_without_accents, query) if d2 else {'label' : 'off'}
-            analise3 = analyse_affin(text_without_accents, query) if d3 else {'label' : 'off'}
-        
+            analise1 = alchemy.classifyAlchemyAPI(text_without_accents) if d1 else {'label' : 'off'}
+            analise2 = analyse_affin(text_without_accents, query) if d2 else {'label' : 'off'}
+            analise3 = analyse_bayes(text_without_accents, query) if d3 else {'label' : 'off'}
+            
             my_queue.put((tweet, analise1, analise2, analise3))
         
         else:
